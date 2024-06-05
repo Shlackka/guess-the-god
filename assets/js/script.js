@@ -92,5 +92,15 @@ function setRandomGod() {
 function showHint() {
     let god = gods[currentGod];
     alert(`Hint: ${god.hint}`);
+    score -= 5;
+    document.getElementById('score').textContent = score;
+    scoreZero();
+}
+
+function scoreZero() {
+    if (score < 0) {
+        score = 0;
+    }
+    document.getElementById('score').textContent = score;
 }
 
