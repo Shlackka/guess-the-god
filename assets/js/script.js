@@ -65,17 +65,19 @@ function showInstructions() {
 }
 
 function incrementScore() {
-
+    score += 10; 
+    document.getElementById('score').textContent = score;
 }
 
 function checkAnswer (selectedMythology) {
     let god = gods[currentGod];
     if (selectedMythology === god.mythology) {
-        score += 10;
         alert(`${god.mythology} is correct!`);
+        incrementScore();
     } else {
-        alert(`${selectedMytholgy} is incorrect the correct answer is ${god.mythology}.`)
+        alert(`${selectedMythology} is incorrect the correct answer is ${god.mythology}.`)
     }
+    startGame();
 }
 
 function loadGod() {
