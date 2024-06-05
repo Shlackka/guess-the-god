@@ -69,11 +69,18 @@ function incrementScore() {
 }
 
 function checkAnswer (selectedMythology) {
-
+    let god = gods[currentGod];
+    if (selectedMythology === god.mythology) {
+        score += 10;
+        alert(`${god.mythology} is correct!`);
+    } else {
+        alert(`${selectedMytholgy} is incorrect the correct answer is ${god.mythology}.`)
+    }
 }
 
 function loadGod() {
-
+    let god = gods[currentGod];
+    document.getElementById('god-image').src = god.image;
 }
 
 function setRandomGod() {
