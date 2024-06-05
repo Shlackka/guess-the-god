@@ -20,10 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function startGame() {
     document.getElementById("main-menu").classList.add("hidden");
+    document.getElementById("instructions").classList.add("hidden");
     document.getElementById("game-zone").classList.remove("hidden");
 }
 
-function instructions() {
+function showInstructions() {
     document.getElementById("main-menu").classList.add("hidden");
-    document.getElementById("instrucions").classList.remove("hidden");
+    document.getElementById("instructions").classList.remove("hidden");
 }
