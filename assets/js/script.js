@@ -82,7 +82,7 @@ function checkAnswer (selectedMythology) {
 
 function loadGod() {
     let god = gods[currentGod];
-    document.getElementById('god-image').src = god.image;
+    document.getElementById("god-image").src = god.image;
 }
 
 function setRandomGod() {
@@ -90,6 +90,7 @@ function setRandomGod() {
 }
 
 function showHint() {
-
+    let god = gods[currentGod];
+    alert(`Hint: ${god.hint}`);
 }
 
