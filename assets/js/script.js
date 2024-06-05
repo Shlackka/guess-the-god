@@ -1,22 +1,22 @@
 // Global Variables
 
 const gods = [
-    { image: 'placeholder', mythology: 'greek', hint: 'greek 1 placeholder',},
-    { image: 'placeholder', mythology: 'greek', hint: 'greek 2 placeholder',},
-    { image: 'placeholder', mythology: 'greek', hint: 'greek 3 placeholder',},
-    { image: 'placeholder', mythology: 'greek', hint: 'greek 4 placeholder',},
-    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 1 placeholder',},
-    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 2 placeholder',},
-    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 3 placeholder',},
-    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 4 placeholder',},
-    { image: 'placeholder', mythology: 'norse', hint: 'norse 1 placeholder',},
-    { image: 'placeholder', mythology: 'norse', hint: 'norse 2 placeholder',},
-    { image: 'placeholder', mythology: 'norse', hint: 'norse 3 placeholder',},
-    { image: 'placeholder', mythology: 'norse', hint: 'norse 4 placeholder',},
-    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 1 placeholder',},
-    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 2 placeholder',},
-    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 3 placeholder',},
-    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 4 placeholder',}
+    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 4 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 4 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 4 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 4 placeholder',}
 
 ];
 

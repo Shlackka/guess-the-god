@@ -61,3 +61,8 @@ header {
     background-color: crimson;
     transform: scale(1.05);
 }
+
+img {
+    width: 100px;
+    height: 100px;
+}
