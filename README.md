@@ -1,114 +1,186 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Gladiatour
 
-Welcome Oliver Morse,
+A link to the website is **[here](https://shlackka.github.io/Gladiatour/index.html)**.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Gladiatour is an educational website designed to immerse visitors into the interesting history of the gladiatorial games and the people who fought in them. The site has accessibility as one of it's key features meaning not only should it flow nicely but it should be enjoyable to all, more of these features will be highlighted below.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 28, 2024**
+My hope is that with the information provided, and the way in which it is presented, more people will be encouraged to go and delve even deeper into this extraordinary part of our shared past.
 
-## Gitpod Reminders
+![Responsive Mockup](assets/images/readme/gladiatour-mockup.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Design
 
-`python3 -m http.server`
+Please see below the original mockups of the site made using Balsamiq Wireframes.
 
-A blue button should appear to click: _Make Public_,
+- Site Layout Draft
 
-Another blue button should appear to click: _Open Browser_.
+![Site Layout Draft](assets/images/readme/layout-draft-gladiatour.png)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- Main Page Mockup
 
-A blue button should appear to click: _Make Public_,
+![Main Page Mockup](assets/images/readme/main-page-draft-gladiatour.png)
 
-Another blue button should appear to click: _Open Browser_.
+- Information Page Mockup
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    - The design for the information page has changed from my initial designs due to user feedback about ease of use and readability.
 
-To log into the Heroku toolbelt CLI:
+![Information Page Mockup](assets/images/readme/information-page-draft-gladiatour.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Signup Page Mockup
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+![Signup Page Mockup](assets/images/readme/signup-page-draft-gladiatour.png)
 
-------
+- Thank You Page Mockup
 
-## Release History
+![Thank You Page Mockup](assets/images/readme/form-submission-page-draft-gladiatour.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Features
 
-**May 28 2024:** Fix Mongo and Links installs
+Below I will go into a brief explanation of the features I have encorporated into the site.
 
-**April 26 2024:** Update node version to 16
+### Existing Features
 
-**September 20 2023:** Update Python version to 3.9.17.
+- __Navigation Bar__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    - Shown at the top of all pages within the site, the navigation or 'nav' bar will make traversing the site as easy as it can be without having to resort to using any of the browsers navigation options.
+    - The nav bar is also fully responsive meaning even when viewing on a mobile or tablet it should be just as easy without sacraficing the quality of the experience.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Navigation Bar](assets/images/readme/navigation-bar.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Navigation Bar Mobile(closed)](assets/images/readme/navigation-bar-mobile.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Navigation Bar Mobile(open)](assets/images/readme/navigation-bar-mobile-open.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __Landing Page__
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    - The landing page has been designed in a way that really captures the grandeur of ancient rome with vibrant colours which compliment eachother whislt also staying loyal to the source content.
+    - Below the main heading of the landing page is a brief introduction to the website aswell as giving an ideal starting point through the site in the way of a button to the information page.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Main Heading](assets/images/readme/main-heading.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Main Page Introduction](assets/images/readme/main-page-introduction.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- __Gladiators Page__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    - The Gladiators page is designed to flow easily from the landing page so as to keep the same feeling throughout the whole site.
+    - All images within this page have been styled the same in order to keep the page uniform and maintain quality.
+    - Below each image an audio control can be found which plays an audio clip of the pronunciation of the names in a phonetic style.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Gladiator Information](assets/images/readme/gladiator-information.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __Sign Up Page__
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    - The sign up page was designed to be as simple as possible whilst still keeping the overall feel of the site. 
+    - Minimal usage of elements was chosen to make best use of the background image to encourage a feeling of positivity and victory.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Signup Form](assets/images/readme/signup-page.png)
 
-------
+- __Thank You Page__
 
-## FAQ about the uptime script
+    - A thank you page has been implemented to show once a user has successfully signed up to enforce a positive response from the user.
+    - The custom message thanks the user for signing up whilst also giving them a button to return the main page.
 
-**Why have you added this script?**
+![Thank You Page](assets/images/readme/thank-you-page.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- __The Footer__
 
-**How will this affect me?**
+    - The footer has been designed to keep in line with the navbar of a minimal look using the exact same colours and styles.
+    - Icons have been used rather than words as the pages they link to have become second nature to most users.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Footer](assets/images/readme/footer.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- __404 Error Page__
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    - The 404 error page has been designed to be simple but stay within the design of the rest of the site.
+    - A button directing back to the main page has been implemented and has the same styling as all other primary buttons.
 
-**So….?**
+![404 Error Page](assets/images/readme/error-page.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Features Not Yet Implemented
 
-**Can I opt out?**
+- __Gladiator Dropdown__
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    - I had planned to implement a dropdown on the gladiators information page to work on smaller screens much like the nav menu.
+    - This would have only shown the relevant information for the chosen gladiator rather than having the whole page as a long scrollable page.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Testing
 
-**Anything more?**
+Each feature of the site has been tested upon integration and also tested again upon completion of development, these tests will be outlined below.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- The Nav bar was tested by confirming each link lead to the correct page which I can confirm is the case this was repeated for each page where the nav bar was present.
 
----
+- The footer, similarly to the nav bar was tested by confirming each link lead to the correct social media page, this was repeated for every page with the footer bar.
 
-Happy coding!
+- All buttons that are present within the site have been tested by confirming that once activated they perform the correct action, the button on the index leads to the information page and the buttons on the 404 and thank you pages leads back to the index page.
+
+- The audio playback features on the information page have all been confirmed to play the correct audio clip for their relevant section. 
+
+- The sign up form has had all relevant inputs tested to confirm that they will request input when left empty with the email input specifically requesting for an email format with an @ symbol.
+
+- The submit button is confirmed to lead to the thank you page upon successful completion of all relevant inputs on the form.
+
+Along with feature testing I have also run lighthouse tests, these have come back very positive as seen below with the screen captures.
+
+- Lighthouse report for main page
+
+![Lighthouse Report Index](assets/images/readme/lighthouse-report-index.png)
+
+- Lighthouse report for information page
+
+![Lighthouse Report Information](assets/images/readme/lighthouse-report-information.png)
+
+- Lighthouse report for signup form page
+
+![Lighthouse Report Signup Form](assets/images/readme/lighthouse-report-signup-form.png)
+
+
+### Validator Testing
+
+- __HTML__
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshlackka.github.io%2FGladiatour%2F)
+- __CSS__
+    - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshlackka.github.io%2FGladiatour%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+### Unfixed Bugs
+
+To the best of my knowledge after testing all aspects of the site I have been unable to find any unfixed bugs.
+
+## Deployment
+
+The site has been deployed to GitHub pages, in order to do this the following steps were completed.
+
+- From within the Gladiatour repo I navigated to the settings tab
+
+- In settings navigate to the Pages section under "Code and automation"
+
+- Once in Pages, I chose to deploy from a branch as my source and then chose the Main branch before clicking save
+
+- The deployed site can be found at **https://shlackka.github.io/Gladiatour/index.html**
+
+If you wish to fork the repo this can be achieved by using the "Fork" button at the top of the repo.
+
+If you wish to clone the repo this can be achieved by using the drop down on the green "code" button and copying the URL into a workspace of your choosing such as **[Gitpod](https://www.gitpod.io/)** or **[CodeAnywhere](https://codeanywhere.com/)**.
+
+## Credits 
+
+In the below section I will go over all of the external sources where I either drew inspiration or used their tools to assist in the development of Gladiatour.
+
+### Content
+
+ - The text for the main index page and information page was taken from **[ChatGPT](https://chatgpt.com/?oai-dm=1)** with minor changes by myself. (All text within the README has been typed by myself).
+
+ - **[ChatGPT](https://chatgpt.com/?oai-dm=1)** has been used to help explain any concepts I may have been struggling to understand, this was used more at the beginning of development with it tapering off as I became more confident.
+
+ - The icons for the footer and the arrow for the dropdown on mobile were taken from **[Font Awesome](https://fontawesome.com/)**.
+
+ - For the initial development of this site I took inspiration from the practice project I completed prior, which can be found **[here](https://github.com/Shlackka/Love-Running)**.
+
+ - Fonts for the site were found using **[Google Fonts](https://fonts.google.com/)**.
+
+### Media
+
+- The audio clips for the information page were created using **[Voice Generator](https://voicegenerator.io/)**.
+
+- All images including those used as backgrounds have been created using the DALL-E AI image creator through **[ChatGPT](https://chatgpt.com/?oai-dm=1)** by OpenAI.
+
+- Favicon was created using **[Red Ketchup](https://redketchup.io/favicon-generator)**.
