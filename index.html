@@ -17,11 +17,47 @@
 <body>
     <!-- Heading -->
     <header>
-    
+        <h1 class="heading">Guess The God</h1>
     </header>
+    <!-- Main Game Area -->
     <main>
-
+        <section id="main-container">
+            <!-- Main Menu -->
+            <div id="main-menu" class="menu">
+                <button class="button button-start-game">
+                    Start Game
+                </button>
+                <button class="button button-instructions">
+                    How to Play
+                </button>
+            <!-- Question & Answer zone -->
+            </div>
+            <div id="game-zone" class="hidden">
+                <div id="question-zone">
+                    <img id="god-image" src="" alt="Image of a god">
+                    <h4 id="question">To which mythology does this god/goddess belong?</h4>
+                </div>
+                <div id="answer-zone">
+                    <button class="button button-norse" data-type="norse">
+                        Norse
+                    </button>
+                    <button class="button button-greek" data-type="greek">
+                        Greek
+                    </button>
+                    <button class="button button-egyptian" data-type="egyptian">
+                        Egyptian
+                    </button>
+                    <button class="button button-aztec" data-type="aztec">
+                        Aztec
+                    </button>
+                    <button class="button button-hint">
+                        Get a hint (Half points)
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Footer -->
     <footer>
 
     </footer>

@@ -1,4 +1,4 @@
-# Gladiatour
+# Guess The God
 
 A link to the website is **[here](https://shlackka.github.io/Gladiatour/index.html)**.
 
