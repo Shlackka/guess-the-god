@@ -1,22 +1,22 @@
 // Global Variables
 
 const gods = [
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
-    { image: , mythology: , hint: ,},
+    { image: 'placeholder', mythology: 'greek', hint: 'greek 1 placeholder',},
+    { image: 'placeholder', mythology: 'greek', hint: 'greek 2 placeholder',},
+    { image: 'placeholder', mythology: 'greek', hint: 'greek 3 placeholder',},
+    { image: 'placeholder', mythology: 'greek', hint: 'greek 4 placeholder',},
+    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 1 placeholder',},
+    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 2 placeholder',},
+    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 3 placeholder',},
+    { image: 'placeholder', mythology: 'egyptian', hint: 'egypt 4 placeholder',},
+    { image: 'placeholder', mythology: 'norse', hint: 'norse 1 placeholder',},
+    { image: 'placeholder', mythology: 'norse', hint: 'norse 2 placeholder',},
+    { image: 'placeholder', mythology: 'norse', hint: 'norse 3 placeholder',},
+    { image: 'placeholder', mythology: 'norse', hint: 'norse 4 placeholder',},
+    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 1 placeholder',},
+    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 2 placeholder',},
+    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 3 placeholder',},
+    { image: 'placeholder', mythology: 'aztec', hint: 'aztec 4 placeholder',}
 
 ];
 
@@ -52,6 +52,7 @@ function startGame() {
     document.getElementById("main-menu").classList.add("hidden");
     document.getElementById("instructions").classList.add("hidden");
     document.getElementById("game-zone").classList.remove("hidden");
+    setRandomGod();
     loadGod();
 }
 
