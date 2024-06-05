@@ -1,5 +1,30 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
+// Global Variables
+
+const deities = [
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+    { image: , mythology: , hint: ,},
+
+];
+
+let currentDeity = 0;
+let score = 0;
+
+// Waits for the DOM to finish loading before beginning the game
+// Add event listeners to the buttons 
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
@@ -20,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+/**
+ * Hide main menu and instructions(if required) and makes the game area visible to the user before loading the first question
+ */
 function startGame() {
     document.getElementById("main-menu").classList.add("hidden");
     document.getElementById("instructions").classList.add("hidden");
@@ -27,6 +55,9 @@ function startGame() {
     loadGod();
 }
 
+/**
+ * Hide main menu and show instructions
+ */
 function showInstructions() {
     document.getElementById("main-menu").classList.add("hidden");
     document.getElementById("instructions").classList.remove("hidden");
@@ -45,6 +76,6 @@ function loadGod() {
 }
 
 function showHint() {
-    
+
 }
 
