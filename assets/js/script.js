@@ -1,6 +1,6 @@
 // Global Variables
 
-const deities = [
+const gods = [
     { image: , mythology: , hint: ,},
     { image: , mythology: , hint: ,},
     { image: , mythology: , hint: ,},
@@ -20,7 +20,7 @@ const deities = [
 
 ];
 
-let currentDeity = 0;
+let currentGod = 0;
 let score = 0;
 
 // Waits for the DOM to finish loading before beginning the game
@@ -73,6 +73,10 @@ function checkAnswer (selectedMythology) {
 
 function loadGod() {
 
+}
+
+function setRandomGod() {
+    currentGod = Math.floor(Math.random() * gods.length);
 }
 
 function showHint() {
