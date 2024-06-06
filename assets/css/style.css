@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     background-color: papayawhip;
+    font-size: 20px;
 }
 
 .top-image {
@@ -68,6 +69,55 @@ header {
     margin-top: 200px;
 }
 
+#instructions {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; 
+    position: relative; 
+    top: 70%; 
+    text-align: center; 
+}
+
+#instructions p {
+    margin: 20px;
+}
+
+#game-zone {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; 
+    position: relative; 
+    top: 70%; 
+    text-align: center; 
+}
+
+#answer-zone {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+    justify-items: center; 
+    margin-top: 20px;
+}
+
+.button-answer {
+    width: 100%; 
+    padding: 10px;
+    font-family: 'Lato', serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+.button-hint {
+    grid-column: span 2; 
+    width: 100%; 
+    padding: 10px;
+    font-family: 'Lato', serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
 /* Class to hide elements easily using JS */
 .hidden {
     display: none;
@@ -80,8 +130,8 @@ header {
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
-    background-color: grey;
+    font-size: 20px;
+    background-color: green;
     width: 150px;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
