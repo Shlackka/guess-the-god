@@ -20,6 +20,29 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
+    background-color: papayawhip;
+}
+
+.side-image {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.left {
+    left: 0;
+    background-image: url(../images/background-left.png);
+    background-position: left;
+}
+
+.right {
+    right: 0;
+    background-image: url(../images/background-right.png);
+    background-position: right;
 }
 
 /* Header styling */
@@ -28,7 +51,6 @@ header {
     justify-content: center;
     align-items: baseline;
     padding: 0;
-    z-index: 10;
     position: fixed;
     width: 100%;
     height: 57px;
