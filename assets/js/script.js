@@ -64,11 +64,17 @@ function showInstructions() {
     document.getElementById("instructions").classList.remove("hidden");
 }
 
+/**
+ * Score is incremented and updated on the webpage for the user to see
+ */
 function incrementScore() {
     score += 10; 
     document.getElementById('score').textContent = score;
 }
 
+/**
+ * Compares users selected answer to the current correct answer and returns a result to the user
+ */
 function checkAnswer (selectedMythology) {
     let god = gods[currentGod];
     if (selectedMythology === god.mythology) {
@@ -80,15 +86,24 @@ function checkAnswer (selectedMythology) {
     startGame();
 }
 
+/**
+ * Takes the currently selected god from the gods array and loads the image for that god for the user
+ */
 function loadGod() {
     let god = gods[currentGod];
     document.getElementById("god-image").src = god.image;
 }
 
+/**
+ * Makes the selection of a god more random as opposed to simply reading from the array in an order
+ */
 function setRandomGod() {
     currentGod = Math.floor(Math.random() * gods.length);
 }
 
+/**
+ * Shows the hint corresponding to the currently shown god in the style of an alert box to the user
+ */
 function showHint() {
     let god = gods[currentGod];
     alert(`Hint: ${god.hint}`);
@@ -97,6 +112,9 @@ function showHint() {
     scoreZero();
 }
 
+/**
+ * Checks to make sure that the current score isn't less than 0 and updates the score for the user
+ */
 function scoreZero() {
     if (score < 0) {
         score = 0;
