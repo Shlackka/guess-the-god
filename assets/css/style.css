@@ -142,9 +142,9 @@ header {
     transform: scale(1.05);
 }
 
-img {
-    width: 100px;
-    height: 100px;
+#god-image {
+    width: 38%;
+    height: 38%;
 }
 
 /* Media query: large or lanscape phones (576px and up) */
@@ -188,6 +188,11 @@ img {
         display: flex;
         width: 50%;
         margin-left: 25%;
+    }
+
+    #god-image {
+        width: 40%;
+        height: 40%;
     }
 
 }
