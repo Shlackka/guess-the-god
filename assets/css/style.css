@@ -23,26 +23,26 @@ body {
     background-color: papayawhip;
 }
 
-.side-image {
-    position: absolute;
+.top-image {
+    position: fixed;
     top: 0;
-    width: 25%;
-    height: 100%;
+    height: 10%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
+    background: url(../images/background-top.png);
+    background-position: top;
 }
 
-.left {
-    left: 0;
-    background-image: url(../images/background-left.png);
-    background-position: left;
-}
-
-.right {
-    right: 0;
-    background-image: url(../images/background-right.png);
-    background-position: right;
+.bottom-image {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(../images/background-bottom.png);
+    background-position: bottom;
 }
 
 /* Header styling */
@@ -55,7 +55,7 @@ header {
     width: 100%;
     height: 57px;
     font-family: 'Vollkorn', serif;
-    margin-top: 25px;
+    margin-top: 95px;
     font-size: 1.5rem;
 }
 
@@ -65,7 +65,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 /* Class to hide elements easily using JS */
@@ -104,6 +104,41 @@ img {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    .side-image {
+        position: absolute;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    
+    .left {
+        left: 0;
+        background-image: url(../images/background-left.png);
+        background-position: left;
+    }
+    
+    .right {
+        right: 0;
+        background-image: url(../images/background-right.png);
+        background-position: right;
+    }
+
+    .top-image {
+        display: none;
+    }
+
+    .bottom-image {
+        display: none;
+    }
+
+    #main-container {
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+    }
 
 }
 
