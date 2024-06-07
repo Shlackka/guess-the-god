@@ -134,5 +134,6 @@ function slide() {
     body.classList.toggle("slide-open");
     body.classList.toggle("closed");
     slideButton.classList.add("hidden");
+    slideButton.style.display = "none";
 }
 
