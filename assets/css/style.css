@@ -176,13 +176,13 @@ header {
 @media screen and (min-width: 768px) {
     .closed {
         .side-image {
-            width: 49.8%;
+            width: 50%;
         }
     }
 
     #slide-button {
         display: flex;
-        z-index: 6;
+        z-index: 7;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -196,26 +196,45 @@ header {
     .side-image {
         position: fixed;
         top: 0;
-        width: 49.8%;
+        width: 50%;
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 5;
-        transition: transform 5s ease-in-out;
+        transition: transform 3s ease-in-out;
+    }
+
+    .side-bar {
+        position: fixed;
+        top: 0;
+        width: 2%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 6;
+        transition: transform 3s ease-in-out;
+    }
+
+    .left-bar {
+        right: 50%;
+        background-color: #daa520;
+    }
+
+    .right-bar {
+        left: 50%;
+        background-color: #daa520;  
     }
     
     .left {
         left: 0;
         background-image: url(../images/background-left.png);
         background-position: left;
-        box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 1);;
     }
     
     .right {
         right: 0;
         background-image: url(../images/background-right.png);
         background-position: right;
-        box-shadow: -5px 0 10px -5px rgba(0, 0, 0, 1);
     }
 
     .slide-open .left {
@@ -224,6 +243,14 @@ header {
     
     .slide-open .right {
         transform: translateX(50%);
+    }
+
+    .slide-open .left-bar {
+        transform: translateX(-1200%);
+    }
+    
+    .slide-open .right-bar {
+        transform: translateX(1200%);
     }
 
     .top-image {
@@ -257,6 +284,10 @@ header {
     #god-image {
         width: 40%;
         height: 40%;
+    }
+
+    .button {
+        display: absolute;
     }
 
 }

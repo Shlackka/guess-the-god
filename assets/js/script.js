@@ -131,9 +131,19 @@ function scoreZero() {
 function slide() {
     let body = document.body;
     let slideButton = document.getElementById("slide-button");
+    let leftBar = document.getElementById("left-bar");
+    let rightBar = document.getElementById("right-bar");
+
     body.classList.toggle("slide-open");
     body.classList.toggle("closed");
     slideButton.classList.add("hidden");
+    
+    // Delay the addition of the box-shadow by 0.1 seconds (100 milliseconds)
+    setTimeout(function() {
+        leftBar.style.boxShadow = "5px 0 10px -5px rgba(0, 0, 0, 2)";
+        rightBar.style.boxShadow = "-5px 0 10px -5px rgba(0, 0, 0, 2)";
+    }, 100); // 100 milliseconds delay
+    
     slideButton.style.display = "none";
 }
 
