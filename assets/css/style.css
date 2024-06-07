@@ -33,6 +33,7 @@ body {
     background-repeat: no-repeat;
     background: url(../images/background-top.png);
     background-position: top;
+    z-index: -2;
 }
 
 .bottom-image {
@@ -44,6 +45,7 @@ body {
     background-repeat: no-repeat;
     background: url(../images/background-bottom.png);
     background-position: bottom;
+    z-index: -2;
 }
 
 /* Header styling */
@@ -69,6 +71,18 @@ header {
     margin-top: 200px;
 }
 
+#background-center-mobile {
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85.797px;
+    position: absolute;
+    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 1),
+                0 5px 10px -5px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
 #instructions {
     background-color: #ffffff; 
     padding: 20px;
@@ -90,7 +104,7 @@ header {
     width: 90%; 
     position: relative; 
     top: 70%; 
-    text-align: center; 
+    text-align: center;
 }
 
 #answer-zone {
@@ -99,6 +113,7 @@ header {
     grid-gap: 10px; 
     justify-items: center; 
     margin-top: 20px;
+    z-index: 2;
 }
 
 .button-answer {
@@ -161,7 +176,7 @@ header {
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        z-index: -1;
+        z-index: -2;
     }
     
     .left {
@@ -188,6 +203,22 @@ header {
         display: flex;
         width: 50%;
         margin-left: 25%;
+    }
+
+    #background-center {
+        height: 100%;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25%;
+        position: absolute;
+        box-shadow: -5px 0 10px -5px rgba(0, 0, 0, 1),
+                     5px 0 10px -5px rgba(0, 0, 0, 1); 
+        z-index: -1;
+    }
+
+    #background-center-mobile {
+        display: none;
     }
 
     #god-image {
