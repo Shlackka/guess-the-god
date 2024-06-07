@@ -27,6 +27,7 @@ let score = 0;
 // Add event listeners to the buttons 
 
 document.addEventListener("DOMContentLoaded", function() {
+    
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
@@ -38,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 showInstructions();
             } else if (dataType === "hint") {
                 showHint();
+            } else if (dataType === "slide") {
+                slide();
             } else {
                 checkAnswer(dataType);
             }
@@ -120,5 +123,16 @@ function scoreZero() {
         score = 0;
     }
     document.getElementById('score').textContent = score;
+}
+
+/**
+ * Slides the two side images open to reveal the main menu of the game
+ */
+function slide() {
+    let body = document.body;
+    let slideButton = document.getElementById("slide-button");
+    body.classList.toggle("slide-open");
+    body.classList.toggle("closed");
+    slideButton.classList.add("hidden");
 }
 
