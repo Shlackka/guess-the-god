@@ -217,12 +217,18 @@ header {
 
     .left-bar {
         right: 50%;
-        background-color: #daa520;
+        background-image: url(../images/decorative-bar-vertical.png);
+        background-size: contain;
+        background-repeat: repeat;
+        box-shadow: -5px 0 15px -5px rgba(0, 0, 0, 2);
     }
 
     .right-bar {
         left: 50%;
-        background-color: #daa520;  
+        background-image: url(../images/decorative-bar-vertical.png);
+        background-size: contain;
+        background-repeat: repeat;
+        box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 2);
     }
     
     .left {

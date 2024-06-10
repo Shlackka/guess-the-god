@@ -140,8 +140,8 @@ function slide() {
     
     // Delay the addition of the box-shadow by 0.1 seconds (100 milliseconds)
     setTimeout(function() {
-        leftBar.style.boxShadow = "5px 0 10px -5px rgba(0, 0, 0, 2)";
-        rightBar.style.boxShadow = "-5px 0 10px -5px rgba(0, 0, 0, 2)";
+        leftBar.style.boxShadow = "5px 0 15px -5px rgba(0, 0, 0, 2), -5px 0 15px -5px rgba(0, 0, 0, 2)";
+        rightBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2), 5px 0 15px -5px rgba(0, 0, 0, 2)";
     }, 100); // 100 milliseconds delay
     
     slideButton.style.display = "none";
