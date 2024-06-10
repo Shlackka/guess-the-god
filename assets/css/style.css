@@ -70,10 +70,10 @@ header {
 #hero-image {
     display: flex;
     justify-content: center;
-    width: 35%;
+    width: 62%;
     position: absolute;
     z-index: 1;
-    margin-top: 3%;
+    margin-top: 60px;
 }
 
 #slide-button {
@@ -86,14 +86,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
     z-index: 2;
 }
 
 #main-menu {
     z-index: 2;
-    margin-top: 60%;
-    position: absolute;
+    margin-top: 70%;
+    position: relative;
 }
 
 #background-center-mobile {
@@ -135,7 +135,7 @@ header {
 #answer-zone {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-gap: 10px; 
+    grid-gap: 5px; 
     justify-items: center; 
     margin-top: 20px;
     z-index: 2;
@@ -166,7 +166,7 @@ header {
 /* General button styling */
 .button {
     padding: 10px 20px;
-    margin: 5px;
+    margin: 1px;
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -306,6 +306,14 @@ header {
 
     .bottom-image {
         display: none;
+    }
+
+    #hero-image {
+        width: 40%;
+    }
+
+    #main-menu {
+        margin-top: 72%;
     }
 
     #main-container {

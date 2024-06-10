@@ -56,6 +56,7 @@ function startGame() {
     document.getElementById("main-menu").classList.add("hidden");
     document.getElementById("instructions").classList.add("hidden");
     document.getElementById("game-zone").classList.remove("hidden");
+    document.getElementById("hero-image").style.display = "none";
     if (score >= 100) {
         alert("Congratulations, you have reached the required score!")
     } else if (score < 100 && playedGods.length < 16) {
@@ -157,7 +158,7 @@ function slide() {
         rightBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2), 5px 0 15px -5px rgba(0, 0, 0, 2)";
     }, 100); // 100 milliseconds delay
     
-    slideButton.style.display = "none";
+    slideButton.style.visibility = "hidden";
 }
 
 /**
