@@ -22,6 +22,7 @@ const gods = [
 
 let currentGod = 0;
 let score = 0;
+let playedGods = [];
 
 // Waits for the DOM to finish loading before beginning the game
 // Add event listeners to the buttons 
@@ -55,8 +56,19 @@ function startGame() {
     document.getElementById("main-menu").classList.add("hidden");
     document.getElementById("instructions").classList.add("hidden");
     document.getElementById("game-zone").classList.remove("hidden");
-    setRandomGod();
-    loadGod();
+    if (score >= 100) {
+        alert("Congratulations, you have reached the required score!")
+    } else if (score < 100 && playedGods.length < 16) {
+        setRandomGod();
+        while (currentGod in playedGods) {
+            setRandomGod();
+        }
+        loadGod();
+    } else if (playedGods.length === 16) {
+        alert("You have run out of gods to guess, better luck next time")
+        endGame();
+    }
+    
 }
 
 /**
@@ -90,11 +102,12 @@ function checkAnswer (selectedMythology) {
 }
 
 /**
- * Takes the currently selected god from the gods array and loads the image for that god for the user
+ * Takes the currently selected god from the gods array and loads the image for that god for the user, then removes that god from the gods array
  */
 function loadGod() {
     let god = gods[currentGod];
     document.getElementById("god-image").src = god.image;
+    playedGods.push(currentGod);
 }
 
 /**
@@ -147,3 +160,17 @@ function slide() {
     slideButton.style.display = "none";
 }
 
+/**
+ * Slides the left and right image back over the game zone
+ */
+function endGame() {
+    let body = document.body;
+    let leftBar = document.getElementById("left-bar");
+    let rightBar = document.getElementById("right-bar");
+
+    body.classList.toggle("slide-open");
+    body.classList.toggle("closed")
+
+    leftBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2)";
+    rightBar.style.boxShadow = "5px 0 15px -5px rgba(0, 0, 0, 2)";
+}
