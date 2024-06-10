@@ -60,7 +60,7 @@ function startGame() {
         alert("Congratulations, you have reached the required score!")
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
-        while (currentGod in playedGods) {
+        while (playedGods.includes(currentGod)) {
             setRandomGod();
         }
         loadGod();
