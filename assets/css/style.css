@@ -186,11 +186,29 @@ header {
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 50%;
-        left: 45%;
-        width: 10%;
-        height: 50px;
+        top: 47%;
+        left: 42.5%;
+        width: 15%;
+        height: 75px;
         align-content: center;
+        font-family: 'Lato', serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #8b0000;
+        border-radius: 30%;
+        transition: background-color 0.3s, transform 0.3s;
+        border: none;
+    }
+
+    #slide-button:hover {
+        background-color: #ffffff;
+        color: #8b0000;
+        transform: scale(1.05);
+    }
+
+    #slide-button:active {
+        transform: scale(0.95);
     }
 
     .side-image {
