@@ -1,22 +1,22 @@
 // Global Variables
 
 const gods = [
-    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 1 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 2 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 3 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'greek', hint: 'greek 4 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 1 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 2 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 3 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'egyptian', hint: 'egypt 4 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 1 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 2 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 3 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'norse', hint: 'norse 4 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 1 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 2 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 3 placeholder',},
-    { image: 'assets/images/placeholder.jpg', mythology: 'aztec', hint: 'aztec 4 placeholder',}
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a greek god', mythology: 'greek', hint: 'greek 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a greek god', mythology: 'greek', hint: 'greek 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a greek god', mythology: 'greek', hint: 'greek 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a greek god', mythology: 'greek', hint: 'greek 4 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a egyptian god', mythology: 'egyptian', hint: 'egypt 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a egyptian god', mythology: 'egyptian', hint: 'egypt 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a egyptian god', mythology: 'egyptian', hint: 'egypt 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a egyptian god', mythology: 'egyptian', hint: 'egypt 4 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a norse god', mythology: 'norse', hint: 'norse 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a norse god', mythology: 'norse', hint: 'norse 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a norse god', mythology: 'norse', hint: 'norse 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a norse god', mythology: 'norse', hint: 'norse 4 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a aztec god', mythology: 'aztec', hint: 'aztec 1 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a aztec god', mythology: 'aztec', hint: 'aztec 2 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a aztec god', mythology: 'aztec', hint: 'aztec 3 placeholder',},
+    { image: 'assets/images/placeholder.jpg', alt: 'this is a picture of a aztec god', mythology: 'aztec', hint: 'aztec 4 placeholder',}
 
 ];
 
@@ -34,16 +34,23 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function(event) {
             let dataType = this.getAttribute("data-type");
-            if (dataType === "start") {
-                startGame();
-            } else if (dataType === "instructions") {
-                showInstructions();
-            } else if (dataType === "hint") {
-                showHint();
-            } else if (dataType === "slide") {
-                slide();
-            } else {
-                checkAnswer(dataType);
+
+            switch (dataType) {
+                case "start":
+                    startGame();
+                    break;
+                case "instructions":
+                    showInstructions();
+                    break;
+                case "hint":
+                    showHint();
+                    break;
+                case "slide":
+                    slide();
+                    break;
+                default:
+                    checkAnswer(dataType);
+                    break;
             }
         });
     }
@@ -59,6 +66,7 @@ function startGame() {
     document.getElementById("hero-image").style.display = "none";
     if (score >= 100) {
         showMessage("Congratulations, you have reached the required score!");
+        endGame();
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
         while (playedGods.includes(currentGod)) {
@@ -108,6 +116,7 @@ function checkAnswer (selectedMythology) {
 function loadGod() {
     let god = gods[currentGod];
     document.getElementById("god-image").src = god.image;
+    document.getElementById("god-image").alt = god.alt;
     playedGods.push(currentGod);
 }
 
