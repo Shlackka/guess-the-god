@@ -70,7 +70,7 @@ header {
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     padding: 0 10px 0 10px;
-    
+    top: 10%;
 }
 
 #hero-image {
@@ -79,7 +79,7 @@ header {
     width: 62%;
     position: absolute;
     z-index: 1;
-    margin-top: 70px;
+    top: 80px;
 }
 
 #slide-button {
@@ -201,11 +201,11 @@ header {
     top: 40%;
     left: 27.5%;
     width: 45%;
-    height: 35%;
-    padding: 20px;
+    height: auto;
+    padding: 30px;
     background-color: rgba(139, 0, 0, 1);
     font-family: 'Lato', serif;
-    font-size: 28px;
+    font-size: 18px;
     color: #ffffff;
     border-radius: 10px;
     z-index: 20;
@@ -243,6 +243,10 @@ header {
         .side-image {
             width: 50%;
         }
+    }
+
+    .heading {
+        top: -5%;
     }
 
     #slide-button {
@@ -382,12 +386,8 @@ header {
         width: 51%;
     }
 
-    #alert-box {
-        height: 25%;
-    }
-
     #custom-message {
-        top: 20%;
+        font-size: 24px;
     }
 
     .button {
