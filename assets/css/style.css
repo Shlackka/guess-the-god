@@ -69,7 +69,7 @@ header {
     color: #ffffff;
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
     
 }
 
@@ -193,6 +193,7 @@ header {
 #god-image {
     width: 45%;
     margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 #alert-box {
@@ -263,7 +264,6 @@ header {
         border-radius: 30%;
         transition: background-color 0.3s, transform 0.3s;
         cursor: pointer;
-        border: solid #b8860b 4px;
     }
 
     #slide-button:hover {
