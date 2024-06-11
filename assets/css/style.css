@@ -198,13 +198,13 @@ header {
 #alert-box {
     position: fixed;
     top: 40%;
-    left: 25%;
-    width: 50%;
+    left: 27.5%;
+    width: 45%;
     height: 35%;
     padding: 20px;
     background-color: rgba(139, 0, 0, 1);
     font-family: 'Lato', serif;
-    font-size: 25px;
+    font-size: 28px;
     color: #ffffff;
     border-radius: 10px;
     z-index: 20;
