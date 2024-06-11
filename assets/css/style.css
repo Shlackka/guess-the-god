@@ -171,14 +171,15 @@ header {
     border: none;
     border-radius: 10px;
     font-size: 20px;
-    background-color: green;
+    background-color: rgba(139, 0, 0, 1);
+    color: #ffffff;
     width: 150px;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-    background-color: crimson;
+    background-color: #ffffff;
     transform: scale(1.05);
 }
 
@@ -186,6 +187,42 @@ header {
     width: 38%;
     height: 38%;
     margin-bottom: 30px;
+}
+
+#alert-box {
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+    background-color: rgba(139, 0, 0, 1);
+    font-family: 'Lato', serif;
+    font-size: 25px;
+    color: #ffffff;
+    border-radius: 10px;
+    z-index: 20;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+#button-close {
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 35px;
+    transition: transform 0.3s;
+}
+
+#button-close:hover {
+    transform: scale(1.1);
+}
+
+#custom-message {
+    position: relative;
+    top: 10%;
 }
 
 /* Media query: large or lanscape phones (576px and up) */
@@ -219,7 +256,6 @@ header {
         background-color: rgba(139, 0, 0, 1);
         border-radius: 30%;
         transition: background-color 0.3s, transform 0.3s;
-        border: none;
         cursor: pointer;
         border: solid #b8860b 4px;
     }
@@ -339,6 +375,14 @@ header {
     #god-image {
         width: 40%;
         height: 40%;
+    }
+
+    #alert-box {
+        height: 25%;
+    }
+
+    #custom-message {
+        top: 20%;
     }
 
     .button {

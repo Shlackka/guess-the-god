@@ -58,7 +58,7 @@ function startGame() {
     document.getElementById("game-zone").classList.remove("hidden");
     document.getElementById("hero-image").style.display = "none";
     if (score >= 100) {
-        alert("Congratulations, you have reached the required score!")
+        showMessage("Congratulations, you have reached the required score!");
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
         while (playedGods.includes(currentGod)) {
@@ -66,7 +66,7 @@ function startGame() {
         }
         loadGod();
     } else if (playedGods.length === 16) {
-        alert("You have run out of gods to guess, better luck next time")
+        showMessage("You have run out of gods to guess, better luck next time");
         endGame();
     }
     
@@ -94,10 +94,10 @@ function incrementScore() {
 function checkAnswer (selectedMythology) {
     let god = gods[currentGod];
     if (selectedMythology === god.mythology) {
-        alert(`${god.mythology} is correct!`);
+        showMessage(`${god.mythology} is correct!`);
         incrementScore();
     } else {
-        alert(`${selectedMythology} is incorrect the correct answer is ${god.mythology}.`)
+        showMessage(`${selectedMythology} is incorrect the correct answer is ${god.mythology}.`);
     }
     startGame();
 }
@@ -123,7 +123,7 @@ function setRandomGod() {
  */
 function showHint() {
     let god = gods[currentGod];
-    alert(`Hint: ${god.hint}`);
+    showMessage(`Hint: ${god.hint}`);
     score -= 5;
     document.getElementById('score').textContent = score;
     scoreZero();
@@ -175,3 +175,18 @@ function endGame() {
     leftBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2)";
     rightBar.style.boxShadow = "5px 0 15px -5px rgba(0, 0, 0, 2)";
 }
+
+function showMessage(message) {
+    let alertBox = document.getElementById("alert-box");
+    let alertMessage = document.getElementById("custom-message")
+
+    alertMessage.textContent = message;
+    alertBox.classList.remove("hidden");
+}
+
+function hideMessageBox() {
+    document.getElementById("alert-box").classList.add("hidden");
+}
+
+document.getElementById("button-close").addEventListener("click", hideMessageBox);
+
