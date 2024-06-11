@@ -31,7 +31,7 @@ body {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background: url(../images/background-top.png);
+    background: url(../images/background-top.webp);
     background-position: top;
     z-index: -2;
 }
@@ -43,7 +43,7 @@ body {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background: url(../images/background-bottom.png);
+    background: url(../images/background-bottom.webp);
     background-position: bottom;
     z-index: -2;
 }
@@ -181,6 +181,7 @@ header {
 .button:hover {
     background-color: #ffffff;
     transform: scale(1.05);
+    color: rgba(139, 0, 0, 1);
 }
 
 #god-image {
@@ -294,7 +295,7 @@ header {
 
     .left-bar {
         right: 50%;
-        background-image: url(../images/decorative-bar-vertical.png);
+        background-image: url(../images/decorative-bar-vertical.webp);
         background-size: contain;
         background-repeat: repeat;
         box-shadow: -5px 0 15px -5px rgba(0, 0, 0, 2);
@@ -302,7 +303,7 @@ header {
 
     .right-bar {
         left: 50%;
-        background-image: url(../images/decorative-bar-vertical.png);
+        background-image: url(../images/decorative-bar-vertical.webp);
         background-size: contain;
         background-repeat: repeat;
         box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 2);
@@ -310,13 +311,13 @@ header {
     
     .left {
         left: 0;
-        background-image: url(../images/background-left.png);
+        background-image: url(../images/background-left.webp);
         background-position: left;
     }
     
     .right {
         right: 0;
-        background-image: url(../images/background-right.png);
+        background-image: url(../images/background-right.webp);
         background-position: right;
     }
 
