@@ -64,7 +64,13 @@ header {
 
 .heading {
     z-index: 2;
-    position: relative; 
+    position: relative;
+    background: #8b0000;
+    color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    padding: 0 5px 0 5px;
+    
 }
 
 #hero-image {
@@ -73,7 +79,7 @@ header {
     width: 62%;
     position: absolute;
     z-index: 1;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 #slide-button {
@@ -185,8 +191,7 @@ header {
 }
 
 #god-image {
-    width: 38%;
-    height: 38%;
+    width: 45%;
     margin-bottom: 30px;
 }
 
@@ -374,8 +379,7 @@ header {
     }
 
     #god-image {
-        width: 40%;
-        height: 40%;
+        width: 51%;
     }
 
     #alert-box {
