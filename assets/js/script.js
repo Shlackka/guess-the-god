@@ -94,6 +94,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+document.getElementById("button-close").addEventListener("click", hideMessageBox);
+
 /**
  * Hide main menu and instructions(if required) and makes the game area visible to the user before loading the first question
  */
@@ -257,11 +259,24 @@ function showMessage(message) {
 
     alertMessage.innerHTML = message;
     alertBox.classList.remove("hidden");
+
+    toggleAnswers(true);
 }
 
 function hideMessageBox() {
     document.getElementById("alert-box").classList.add("hidden");
+
+    toggleAnswers(false);
 }
 
-document.getElementById("button-close").addEventListener("click", hideMessageBox);
+/**
+ * Will disable answer and hint buttons until the alert box has been closed
+ * @param {*} disabled 
+ */
+function toggleAnswers(disabled) {
+    let buttons = document.querySelectorAll(".button-toggle");
+    for (let button of buttons) {
+        button.disabled = disabled;
+    }
+}
 
