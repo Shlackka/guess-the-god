@@ -253,11 +253,10 @@ header {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    .closed {
-        .side-image {
+    .closed .side-image {
             width: 50%;
         }
-    }
+    
 
     .heading {
         top: -5%;
@@ -321,7 +320,7 @@ header {
         background-image: url(../images/decorative-bar-vertical.webp);
         background-size: contain;
         background-repeat: repeat;
-        box-shadow: -5px 0 15px -5px rgba(0, 0, 0, 2);
+        box-shadow: -5px 0 15px -5px rgba(0, 0, 0, 1);
     }
 
     .right-bar {
@@ -329,7 +328,7 @@ header {
         background-image: url(../images/decorative-bar-vertical.webp);
         background-size: contain;
         background-repeat: repeat;
-        box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 2);
+        box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 1);
     }
     
     .left {
@@ -421,11 +420,6 @@ header {
         margin-top: 20px;
         margin-right: 10px;
     }
-
-    .button {
-        display: absolute;
-    }
-
 }
 
 /* media query: larger devices (laptops and desktops, 992px and up) */
