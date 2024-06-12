@@ -201,8 +201,8 @@ header {
 #alert-box {
     position: fixed;
     top: 40%;
-    left: 27.5%;
-    width: 45%;
+    left: 22%;
+    width: 60%;
     height: auto;
     padding: 30px;
     background-color: rgba(139, 0, 0, 1);
@@ -238,14 +238,12 @@ header {
     color: rgba(139, 0, 0, 1);
     background-color: #ffffff;
     margin-top: 20px;
-    margin-left: 10px;
 }
 
 #play-again {
     color: rgba(139, 0, 0, 1);
     background-color: #ffffff;
     margin-top: 20px;
-    margin-right: 10px;
 }
 
 /* Media query: large or lanscape phones (576px and up) */
@@ -404,6 +402,20 @@ header {
 
     #custom-message {
         font-size: 24px;
+    }
+
+    #end-game {
+        color: rgba(139, 0, 0, 1);
+        background-color: #ffffff;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    #play-again {
+        color: rgba(139, 0, 0, 1);
+        background-color: #ffffff;
+        margin-top: 20px;
+        margin-right: 10px;
     }
 
     .button {

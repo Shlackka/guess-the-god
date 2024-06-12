@@ -239,6 +239,8 @@ function playAgain() {
     playedGods = []
 
     document.getElementById('score').textContent = score;
+    document.getElementById("play-again").classList.add("hidden");
+    document.getElementById("end-game").classList.add("hidden");
 
     hideMessageBox();
     setRandomGod();
