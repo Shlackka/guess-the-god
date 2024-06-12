@@ -105,8 +105,8 @@ function startGame() {
 
 
     if (score >= 100) {
-        document.getElementById("play-again").classList.remove("hidden")
-        document.getElementById("end-game").classList.remove("hidden")
+        document.getElementById("play-again").classList.remove("hidden");
+        document.getElementById("end-game").classList.remove("hidden");
         showMessage("Congratulations, you have reached the required score!<br>Would you like to play again?");
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
@@ -115,6 +115,8 @@ function startGame() {
         }
         loadGod();
     } else if (playedGods.length === 16) {
+        document.getElementById("play-again").classList.remove("hidden");
+        document.getElementById("end-game").classList.remove("hidden");
         showMessage("You have run out of gods to guess<br> would you like to play again?");
     }
 }
@@ -228,6 +230,8 @@ function endGame() {
     document.getElementById("game-zone").classList.add("hidden");
     document.getElementById("hero-image").style.display = "flex";
     document.getElementById("slide-button").classList.remove("hidden");
+    
+    playAgain();
 }
 
 function playAgain() {
@@ -237,7 +241,8 @@ function playAgain() {
     document.getElementById('score').textContent = score;
 
     hideMessageBox();
-    startGame();
+    setRandomGod();
+    loadGod();
 }
 
 function showMessage(message) {

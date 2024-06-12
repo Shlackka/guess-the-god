@@ -234,6 +234,20 @@ header {
     top: 10%;
 }
 
+#end-game {
+    color: rgba(139, 0, 0, 1);
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#play-again {
+    color: rgba(139, 0, 0, 1);
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
 /* Media query: large or lanscape phones (576px and up) */
 @media screen and (min-width: 576px) {
 
