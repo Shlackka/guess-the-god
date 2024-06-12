@@ -43,18 +43,31 @@ const gods = [
     { image: 'assets/images/gods/quetzalcoatl.webp', alt: 'this is a picture of a aztec god', mythology: 'Aztec', hint: 'Feathered serpent god of wind and learning',
         name: 'Quetzalcoatl', power: 'god of wind and learning.',
     },
-    { image: 'assets/images/gods/tezcatlipoca.webp', alt: 'this is a picture of a aztec god', mythology: 'Aztec', hint: 'God of the night sky and ancestral memory',
+    { image: 'assets/images/gods/tezcatlipoca.webp', alt: 'this is a picture of a aztec god', mythology: 'Aztec', hint: 'God of the night sky and ancestral memory, associated with the Great Bear constellation',
         name: 'Tezcatlipoca', power: 'god of the night sky and ancestral memory.',
     },
-    { image: 'assets/images/gods/tlaloc.webp', alt: 'this is a picture of a aztec god', mythology: 'Aztec', hint: 'God of rain, water, and fertility',
+    { image: 'assets/images/gods/tlaloc.webp', alt: 'this is a picture of a aztec god', mythology: 'Aztec', hint: 'God of rain, water, and fertility, considered the chief deity in his pantheon',
         name: 'Tlaloc', power: 'god of rain, water, and fertility.',
-    }
+    },
+    { image: 'assets/images/gods/ares.webp', alt: 'this is a picture of a greek god', mythology: 'Greek', hint: 'This god is often depicted with a spear and helmet, symbolizing his role in battles and conflicts',
+        name: 'Ares', power: 'god of war, representing the brutal and violent aspects of warfare.',
+    },
+    { image: 'assets/images/gods/tawaret.webp', alt: 'this is a picture of a egyptian god', mythology: 'Egyptian', hint: 'This deity is depicted with a combination of a hippopotamus, lion, and crocodile features in a mythology known for its ancient hieroglyphs',
+        name: 'Tawaret', power: 'goddess of childbirth and fertility, protecting mothers and infants.',
+    },
+    { image: 'assets/images/gods/dionysus.webp', alt: 'this is a picture of a greek god', mythology: 'Greek', hint: 'Celebrated with festivals and plays, known for his association with grapes and revelry',
+        name: 'Dionysus', power: 'god of wine, fertility, and theater, bringing joy and divine ecstasy.',
+    },
+    { image: 'assets/images/gods/ehecatl.webp', alt: 'this is a picture of a aztec god', mythology: 'Aztec', hint: 'Linked to the feathered serpent in the mythology of an ancient civilization with a famous calendar',
+        name: 'Ehecatl', power: 'god of wind, associated with the movement and creation of the air.',
+    },
 
 ];
 
 let currentGod = 0;
 let score = 0;
 let playedGods = [];
+let hintsUsed = [];
 
 // Waits for the DOM to finish loading before beginning the game
 // Add event listeners to the buttons 
@@ -122,13 +135,13 @@ function startGame() {
         document.getElementById("end-game").classList.remove("hidden");
         closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
         showMessage(`Well done, you scored ${score} but it took you guessing ${playedGods.length} gods to get there, why not try again for a perfect score?`);
-    } else if (score < 100 && playedGods.length < 16) {
+    } else if (score < 100 && playedGods.length < 20) {
         setRandomGod();
         while (playedGods.includes(currentGod)) {
             setRandomGod();
         }
         loadGod();
-    } else if (playedGods.length === 16) {
+    } else if (playedGods.length === 20) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
         closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
@@ -189,10 +202,17 @@ function setRandomGod() {
  */
 function showHint() {
     let god = gods[currentGod];
-    showMessage(`Hint: ${god.hint}`);
-    score -= 5;
-    document.getElementById('score').textContent = score;
-    scoreZero();
+
+    if (hintsUsed.includes(god.hint)) {
+        showMessage(`Hint: ${god.hint}`);
+    } else {
+        showMessage(`Hint: ${god.hint}`);
+        score -= 5;
+        document.getElementById('score').textContent = score;
+        hintsUsed.push(god.hint);
+    }
+    
+        scoreZero();
 }
 
 /**
@@ -235,6 +255,7 @@ function endGame() {
 
     score = 0;
     playedGods = [];
+    hintsUsed = [];
 
     hideMessageBox();
 
@@ -256,6 +277,7 @@ function endGame() {
 function playAgain() {
     score = 0;
     playedGods = [];
+    hintsUsed = [];
 
     document.getElementById('score').textContent = score;
     document.getElementById("play-again").classList.add("hidden");
