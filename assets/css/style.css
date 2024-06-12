@@ -167,6 +167,7 @@ header {
 /* Class to hide elements easily using JS */
 .hidden {
     display: none;
+    visibility: hidden;
 }
 
 /* General button styling */
@@ -194,6 +195,7 @@ header {
     width: 45%;
     margin-bottom: 30px;
     border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 #alert-box {

@@ -80,6 +80,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 case "slide":
                     slide();
                     break;
+                case "end-game":
+                    endGame();
+                    break;
+                case "play-again":
+                    playAgain();
+                    break;
                 default:
                     checkAnswer(dataType);
                     break;
@@ -96,9 +102,12 @@ function startGame() {
     document.getElementById("instructions").classList.add("hidden");
     document.getElementById("game-zone").classList.remove("hidden");
     document.getElementById("hero-image").style.display = "none";
+
+
     if (score >= 100) {
-        showMessage("Congratulations, you have reached the required score!");
-        endGame();
+        document.getElementById("play-again").classList.remove("hidden")
+        document.getElementById("end-game").classList.remove("hidden")
+        showMessage("Congratulations, you have reached the required score!<br>Would you like to play again?");
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
         while (playedGods.includes(currentGod)) {
@@ -106,10 +115,8 @@ function startGame() {
         }
         loadGod();
     } else if (playedGods.length === 16) {
-        showMessage("You have run out of gods to guess, better luck next time");
-        endGame();
+        showMessage("You have run out of gods to guess<br> would you like to play again?");
     }
-    
 }
 
 /**
@@ -199,8 +206,6 @@ function slide() {
         leftBar.style.boxShadow = "5px 0 15px -5px rgba(0, 0, 0, 2), -5px 0 15px -5px rgba(0, 0, 0, 2)";
         rightBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2), 5px 0 15px -5px rgba(0, 0, 0, 2)";
     }, 100); // 100 milliseconds delay
-    
-    slideButton.style.visibility = "hidden";
 }
 
 /**
@@ -211,11 +216,28 @@ function endGame() {
     let leftBar = document.getElementById("left-bar");
     let rightBar = document.getElementById("right-bar");
 
+    hideMessageBox();
+
     body.classList.toggle("slide-open");
     body.classList.toggle("closed")
 
     leftBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2)";
     rightBar.style.boxShadow = "5px 0 15px -5px rgba(0, 0, 0, 2)";
+
+    document.getElementById("main-menu").classList.remove("hidden");
+    document.getElementById("game-zone").classList.add("hidden");
+    document.getElementById("hero-image").style.display = "flex";
+    document.getElementById("slide-button").classList.remove("hidden");
+}
+
+function playAgain() {
+    score = 0;
+    playedGods = []
+
+    document.getElementById('score').textContent = score;
+
+    hideMessageBox();
+    startGame();
 }
 
 function showMessage(message) {
