@@ -215,7 +215,7 @@ function slide() {
 }
 
 /**
- * Slides the left and right image back over the game zone
+ * Slides the left and right image back over the game zone whilst resetting the gamezone for if the player decides to play again from the main menu
  */
 function endGame() {
     let body = document.body;
