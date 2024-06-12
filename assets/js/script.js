@@ -104,10 +104,14 @@ function startGame() {
     document.getElementById("hero-image").style.display = "none";
 
 
-    if (score >= 100) {
+    if (score >= 100 && playedGods.length === 10) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
-        showMessage("Congratulations, you have reached the required score!<br>Would you like to play again?");
+        showMessage("Congratulations, you have achieved a perfect score!<br>Would you like to play again?");
+    } else if (score >= 100 && playedGods.length > 10) {
+        document.getElementById("play-again").classList.remove("hidden");
+        document.getElementById("end-game").classList.remove("hidden");
+        showMessage(`Well done, you scored 100 but it took you guessing ${playedGods.length} gods to get there, why not try again for a perfect score?`)
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
         while (playedGods.includes(currentGod)) {
