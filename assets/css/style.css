@@ -76,7 +76,7 @@ header {
 #hero-image {
     display: flex;
     justify-content: center;
-    width: 62%;
+    width: 63%;
     position: absolute;
     z-index: 1;
     top: 80px;
@@ -98,7 +98,7 @@ header {
 
 #main-menu {
     z-index: 2;
-    margin-top: 70%;
+    margin-top: 74%;
     position: relative;
 }
 
@@ -145,6 +145,10 @@ header {
     justify-items: center; 
     margin-top: 20px;
     z-index: 2;
+}
+
+#score-zone {
+    margin-top: 1%;
 }
 
 .button-answer {
@@ -293,6 +297,15 @@ header {
         transform: scale(0.95);
     }
 
+    .button {
+        width: 75%;
+    }
+
+    .button-start-game, .button-instructions {
+        margin-left: 14%;
+        margin-bottom: 2%;
+    }
+
     .side-image {
         position: fixed;
         top: 0;
@@ -368,11 +381,11 @@ header {
     }
 
     #hero-image {
-        width: 40%;
+        width: 38%;
     }
 
     #main-menu {
-        margin-top: 72%;
+        margin-top: 70%;
     }
 
     #main-container {
@@ -411,14 +424,12 @@ header {
         color: rgba(139, 0, 0, 1);
         background-color: #ffffff;
         margin-top: 20px;
-        margin-left: 10px;
     }
     
     #play-again {
         color: rgba(139, 0, 0, 1);
         background-color: #ffffff;
         margin-top: 20px;
-        margin-right: 10px;
     }
 }
 
