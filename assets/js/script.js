@@ -60,39 +60,41 @@ let playedGods = [];
 // Add event listeners to the buttons 
 
 document.addEventListener("DOMContentLoaded", function() {
-    
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function(event) {
-            let dataType = this.getAttribute("data-type");
-
-            switch (dataType) {
-                case "start":
-                    startGame();
-                    break;
-                case "instructions":
-                    showInstructions();
-                    break;
-                case "hint":
-                    showHint();
-                    break;
-                case "slide":
-                    slide();
-                    break;
-                case "end-game":
-                    endGame();
-                    break;
-                case "play-again":
-                    playAgain();
-                    break;
-                default:
-                    checkAnswer(dataType);
-                    break;
-            }
-        });
+        button.addEventListener("click", buttonClick); 
     }
 });
+        
+            
+function buttonClick () {
+    let dataType = this.getAttribute("data-type");
+
+        switch (dataType) {
+             case "start":
+                startGame();
+                break;
+             case "instructions":
+                showInstructions();
+                break;
+             case "hint":
+                showHint();
+                break;
+             case "slide":
+                slide();
+                break;
+             case "end-game":
+                endGame();
+                break;
+            case "play-again":
+                playAgain();
+                break;
+            default:
+                checkAnswer(dataType);
+                break;
+            }
+        }
 
 document.getElementById("button-close").addEventListener("click", hideMessageBox);
 
@@ -119,7 +121,7 @@ function startGame() {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
         closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
-        showMessage(`Well done, you scored 100 but it took you guessing ${playedGods.length} gods to get there, why not try again for a perfect score?`)
+        showMessage(`Well done, you scored ${score} but it took you guessing ${playedGods.length} gods to get there, why not try again for a perfect score?`);
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
         while (playedGods.includes(currentGod)) {
@@ -237,7 +239,7 @@ function endGame() {
     hideMessageBox();
 
     body.classList.toggle("slide-open");
-    body.classList.toggle("closed")
+    body.classList.toggle("closed");
 
     leftBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2)";
     rightBar.style.boxShadow = "5px 0 15px -5px rgba(0, 0, 0, 2)";
@@ -253,7 +255,7 @@ function endGame() {
 
 function playAgain() {
     score = 0;
-    playedGods = []
+    playedGods = [];
 
     document.getElementById('score').textContent = score;
     document.getElementById("play-again").classList.add("hidden");
@@ -266,7 +268,7 @@ function playAgain() {
 
 function showMessage(message) {
     let alertBox = document.getElementById("alert-box");
-    let alertMessage = document.getElementById("custom-message")
+    let alertMessage = document.getElementById("custom-message");
 
     alertMessage.innerHTML = message;
     alertBox.classList.remove("hidden");
