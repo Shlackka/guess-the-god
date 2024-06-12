@@ -108,13 +108,13 @@ function startGame() {
     document.getElementById("instructions").classList.add("hidden");
     document.getElementById("game-zone").classList.remove("hidden");
     document.getElementById("hero-image").style.display = "none";
+    closeButton.style.visibility = "visible";
 
 
 
     if (score >= 100 && playedGods.length === 10) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
-        document.getElementById("button-close").style.visibility = "hidden";
         closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
         showMessage("Congratulations, you have achieved a perfect score!<br>Would you like to play again?");
     } else if (score >= 100 && playedGods.length > 10) {
@@ -260,6 +260,7 @@ function playAgain() {
     document.getElementById('score').textContent = score;
     document.getElementById("play-again").classList.add("hidden");
     document.getElementById("end-game").classList.add("hidden");
+    document.getElementById("button-close").style.visibility = "visible";
 
     hideMessageBox();
     setRandomGod();
