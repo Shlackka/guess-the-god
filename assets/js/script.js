@@ -269,9 +269,12 @@ function endGame() {
     document.getElementById("main-menu").classList.remove("hidden");
     document.getElementById("game-zone").classList.add("hidden");
     document.getElementById("hero-image").style.display = "flex";
-    document.getElementById("slide-button").classList.remove("hidden");
     document.getElementById("play-again").classList.add("hidden");
     document.getElementById("end-game").classList.add("hidden");
+
+    setTimeout(function() {
+        document.getElementById("slide-button").classList.remove("hidden");
+    }, 3100);
 }
 
 function playAgain() {
