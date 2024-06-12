@@ -100,19 +100,25 @@ document.getElementById("button-close").addEventListener("click", hideMessageBox
  * Hide main menu and instructions(if required) and makes the game area visible to the user before loading the first question
  */
 function startGame() {
+    let closeButton = document.getElementById("button-close");
+
     document.getElementById("main-menu").classList.add("hidden");
     document.getElementById("instructions").classList.add("hidden");
     document.getElementById("game-zone").classList.remove("hidden");
     document.getElementById("hero-image").style.display = "none";
 
 
+
     if (score >= 100 && playedGods.length === 10) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
+        document.getElementById("button-close").style.visibility = "hidden";
+        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
         showMessage("Congratulations, you have achieved a perfect score!<br>Would you like to play again?");
     } else if (score >= 100 && playedGods.length > 10) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
+        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
         showMessage(`Well done, you scored 100 but it took you guessing ${playedGods.length} gods to get there, why not try again for a perfect score?`)
     } else if (score < 100 && playedGods.length < 16) {
         setRandomGod();
@@ -123,6 +129,7 @@ function startGame() {
     } else if (playedGods.length === 16) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
+        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
         showMessage("You have run out of gods to guess<br> would you like to play again?");
     }
 }
@@ -224,6 +231,9 @@ function endGame() {
     let leftBar = document.getElementById("left-bar");
     let rightBar = document.getElementById("right-bar");
 
+    score = 0;
+    playedGods = [];
+
     hideMessageBox();
 
     body.classList.toggle("slide-open");
@@ -232,12 +242,13 @@ function endGame() {
     leftBar.style.boxShadow = "-5px 0 15px -5px rgba(0, 0, 0, 2)";
     rightBar.style.boxShadow = "5px 0 15px -5px rgba(0, 0, 0, 2)";
 
+    document.getElementById('score').textContent = score;
     document.getElementById("main-menu").classList.remove("hidden");
     document.getElementById("game-zone").classList.add("hidden");
     document.getElementById("hero-image").style.display = "flex";
     document.getElementById("slide-button").classList.remove("hidden");
-    
-    playAgain();
+    document.getElementById("play-again").classList.add("hidden");
+    document.getElementById("end-game").classList.add("hidden");
 }
 
 function playAgain() {
@@ -279,4 +290,3 @@ function toggleAnswers(disabled) {
         button.disabled = disabled;
     }
 }
-
