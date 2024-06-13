@@ -250,11 +250,6 @@ header {
     margin-top: 20px;
 }
 
-/* Media query: large or lanscape phones (576px and up) */
-@media screen and (min-width: 576px) {
-
-}
-
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     .closed .side-image {
@@ -431,9 +426,4 @@ header {
         background-color: #ffffff;
         margin-top: 20px;
     }
-}
-
-/* media query: larger devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-
 }
