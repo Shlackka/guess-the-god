@@ -174,7 +174,7 @@ function checkAnswer (selectedMythology) {
         showMessage(`${god.mythology} is correct!<br><br>That was ${god.name}, ${god.power}`);
         incrementScore();
     } else {
-        showMessage(`${selectedMythology} is incorrect the correct answer is ${god.mythology}.
+        showMessage(`${selectedMythology} is incorrect, the correct answer is ${god.mythology}.
             <br><br> That was ${god.name}, ${god.power}`);
     }
     startGame();
