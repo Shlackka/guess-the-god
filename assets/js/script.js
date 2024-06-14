@@ -79,8 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", buttonClick); 
     }
 });
-        
-            
+                   
 function buttonClick () {
     let dataType = this.getAttribute("data-type");
 
@@ -106,8 +105,8 @@ function buttonClick () {
             default:
                 checkAnswer(dataType);
                 break;
-            }
         }
+}
 
 document.getElementById("button-close").addEventListener("click", hideMessageBox);
 
@@ -122,8 +121,6 @@ function startGame() {
     document.getElementById("game-zone").classList.remove("hidden");
     document.getElementById("hero-image").style.display = "none";
     closeButton.style.visibility = "visible";
-
-
 
     if (score >= 100 && playedGods.length === 10) {
         document.getElementById("play-again").classList.remove("hidden");
