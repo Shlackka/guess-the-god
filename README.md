@@ -8,6 +8,22 @@ My hope is that with the information provided, and the way in which it is presen
 
 ![Responsive Mockup](assets/images/readme/gladiatour-mockup.png)
 
+**Table of contents:**
+
+- [Title](#guess-the-god)
+- [Design](#design)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Features Not Yet Implemented](#features-not-yet-implemented)
+- [Testing](#testing)
+  - [Validator Testing](#validator-testing)
+  - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+
+
 ## Design
 
 Please see below the original mockups of the site made using Balsamiq Wireframes.
