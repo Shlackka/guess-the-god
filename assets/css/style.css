@@ -67,10 +67,15 @@ header {
     position: relative;
     background: #8b0000;
     color: #ffffff;
-    border-radius: 50px;
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     padding: 0 10px 0 10px;
-    top: 10%;
+    top: -25%;
+    font-size: 3rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    margin: 20px 0; 
+    padding: 0 6px;
+    border: 2px solid #ffffff;
 }
 
 #hero-image {
@@ -186,7 +191,8 @@ header {
     color: #ffffff;
     width: 150px;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 .button:hover {
@@ -258,7 +264,7 @@ header {
     
 
     .heading {
-        top: -5%;
+        top: -45%;
     }
 
     #slide-button {
@@ -280,12 +286,15 @@ header {
         border-radius: 30%;
         transition: background-color 0.3s, transform 0.3s;
         cursor: pointer;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+        border: solid 2px #ffffff;
     }
 
     #slide-button:hover {
         background-color: #ffffff;
         color: #8b0000;
         transform: scale(1.05);
+        border: solid 2px #8b0000;
     }
 
     #slide-button:active {
@@ -297,7 +306,7 @@ header {
     }
 
     .button-start-game, .button-instructions {
-        margin-left: 14%;
+        margin-left: 12%;
         margin-bottom: 2%;
     }
 
