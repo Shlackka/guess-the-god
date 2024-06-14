@@ -128,12 +128,12 @@ function startGame() {
     if (score >= 100 && playedGods.length === 10) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
-        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
+        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after an end game state
         showMessage("Congratulations, you have achieved a perfect score!<br>Would you like to play again?");
     } else if (score >= 100 && playedGods.length > 10) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
-        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
+        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after an end game state
         showMessage(`Well done, you scored ${score} but it took you guessing ${playedGods.length} gods to get there, why not try again for a perfect score?`);
     } else if (score < 100 && playedGods.length < 20) {
         setRandomGod();
@@ -144,7 +144,7 @@ function startGame() {
     } else if (playedGods.length === 20) {
         document.getElementById("play-again").classList.remove("hidden");
         document.getElementById("end-game").classList.remove("hidden");
-        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after and end game state
+        closeButton.style.visibility = "hidden"; // Added to avoid users breaking out and continuing the game after an end game state
         showMessage("You have run out of gods to guess<br> would you like to play again?");
     }
 }
@@ -310,7 +310,6 @@ function hideMessageBox() {
 
 /**
  * Will disable answer and hint buttons until the alert box has been closed
- * @param {*} disabled 
  */
 function toggleAnswers(disabled) {
     let buttons = document.querySelectorAll(".button-toggle");

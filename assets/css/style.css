@@ -407,6 +407,11 @@ header {
         width: 85%;
     }
 
+    #alert-box {
+        left: 27.5%;
+        width: 45%;
+    }
+
     #background-center {
         height: 100%;
         width: 50%;
