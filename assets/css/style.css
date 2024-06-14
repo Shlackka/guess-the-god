@@ -117,8 +117,8 @@ header {
     padding: 20px;
     border-radius: 10px;
     width: 90%; 
-    position: relative; 
-    top: 70%; 
+    position: absolute; 
+    top: 22%; 
     text-align: center;
     z-index: 2;
 }
@@ -387,6 +387,11 @@ header {
         display: flex;
         width: 50%;
         margin-left: 25%;
+    }
+
+    #instructions {
+        width: 45%;
+        top: 30%;
     }
 
     #game-zone {
