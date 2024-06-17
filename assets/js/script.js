@@ -1,9 +1,7 @@
 // Import gods data from data.js
-
 import { gods } from './data.js';
 
 // Global Variables
-
 let currentGod = 0;
 let score = 0;
 let playedGods = [];
@@ -11,7 +9,6 @@ let hintsUsed = [];
 
 // Waits for the DOM to finish loading before beginning the game
 // Add event listeners to the buttons 
-
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
@@ -104,6 +101,7 @@ function incrementScore() {
 
 /**
  * Compares users selected answer to the current correct answer and returns a result to the user
+ * @param {string} selectedMythology 
  */
 function checkAnswer (selectedMythology) {
     let god = gods[currentGod];
@@ -247,6 +245,7 @@ function hideMessageBox() {
 
 /**
  * Will disable answer and hint buttons until the alert box has been closed
+ * @param {boolean} disabled - Pass true to disable the buttons, false to enable them
  */
 function toggleAnswers(disabled) {
     let buttons = document.querySelectorAll(".button-toggle");
