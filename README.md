@@ -1,18 +1,22 @@
 # Guess The God
 
-A link to the website is **[here](https://shlackka.github.io/Gladiatour/index.html)**.
+A link to the website is **[here](https://shlackka.github.io/guess-the-god/)**.
 
-Gladiatour is an educational website designed to immerse visitors into the interesting history of the gladiatorial games and the people who fought in them. The site has accessibility as one of it's key features meaning not only should it flow nicely but it should be enjoyable to all, more of these features will be highlighted below.
-
-My hope is that with the information provided, and the way in which it is presented, more people will be encouraged to go and delve even deeper into this extraordinary part of our shared past.
+Guess the God is an engaging and educational quiz where players are presented with images of gods from various mythologies. The objective is to correctly identify which pantheon each god belongs to—Greek, Norse, Egyptian, or Aztec. This fun and interactive game helps players familiarize themselves with the distinctive visual characteristics and attributes of deities from different cultures. Perfect for mythology enthusiasts and curious learners alike, this quiz offers a visual and entertaining way to deepen your knowledge of ancient pantheons.
 
 ![Responsive Mockup](assets/images/readme/gladiatour-mockup.png)
 
 **Table of contents:**
 
 - [Title](#guess-the-god)
-- [Design](#design)
+- [User Experience](#user-experience-ux)
+  - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+  - [Wireframes](#wireframes)
 - [Features](#features)
+  - [Languages Used](#languages-used)
   - [Existing Features](#existing-features)
   - [Features Not Yet Implemented](#features-not-yet-implemented)
 - [Testing](#testing)
@@ -24,7 +28,16 @@ My hope is that with the information provided, and the way in which it is presen
   - [Media](#media)
 
 
-## Design
+## User Experience (UX)
+
+- ### Design
+  - #### Colour Scheme
+
+  - #### Typography
+
+  - #### Imagery
+
+- ### Wireframes
 
 Please see below the original mockups of the site made using Balsamiq Wireframes.
 
@@ -54,7 +67,9 @@ Please see below the original mockups of the site made using Balsamiq Wireframes
 
 Below I will go into a brief explanation of the features I have encorporated into the site.
 
-### Existing Features
+- ### Languages Used
+
+- ### Existing Features
 
 - __Navigation Bar__
 
