@@ -30,12 +30,48 @@ Guess the God is an engaging and educational quiz where players are presented wi
 
 ## User Experience (UX)
 
+  - ### User Journey
+    - **Landing Page**: Users are welcomed with a nicely styled door which upon clicking the button in the centre of the screen will open to the main menu.  
+    This experience is slightly different on mobile as the first screen will be the main menu.
+
+    - **Main Menu**: A clear choice of either start game or how to play is shown to the user.
+
+    - **Question Screens**: Each question displays an 
+    image of a god with multiple-choice options to select the correct pantheon with the option to also get a hint.
+
+    - **Feedback**: After selecting an answer, users 
+    receive immediate feedback on whether they were correct, with additional information about the god.
+
+    - **Completion**: At the end of the quiz, users are offered an encouraging message on their performance  
+    and offered a choice to play again or to end the game and be returned to the main menu/closed door depending on platform.
+
 - ### Design
   - #### Colour Scheme
-
+    - The color scheme uses a light background (Papayawhip) for a warm, inviting feel. 
+        <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background-color: papayawhip; margin-right: 10px;"></div> Papayawhip (#ffefd5)
+        </div>
+    - Dark red (#8b0000) is used for headings, buttons and the alert box to provide strong visual contrast.
+        <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background-color: #8b0000; margin-right: 10px;"></div> Dark Red (#8b0000)
+        </div>
+    - White (#ffffff) is used for text and backgrounds of key elements to ensure readability and focus. 
+        <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background-color: #ffffff; margin-right: 10px;"></div> White (#ffffff)
+        </div>
+    - Accents include various shades of black for shadows, adding depth and highlighting elements.
+        <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background-color: #000000; margin-right: 10px;"></div> Black (#000000)
+        </div>
   - #### Typography
+    - The primary font is 'Lato', sans-serif for general text, providing a clean and modern look. 
+    - 'Vollkorn', serif is used for headings to add a touch of elegance and distinction.
+    - All fonts were acquired through **[Google Fonts](https://fonts.google.com/)**.
 
   - #### Imagery
+    - High-quality images of gods from different mythologies are used to create a visually engaging and educational experience.  
+    The images are central to the quiz, helping users associate visual characteristics with each god.
+    - All god images were created with the help of **[ChatGPT](https://chatgpt.com/?oai-dm=1)**.
 
 - ### Wireframes
 
