@@ -224,7 +224,7 @@ Along with feature testing I have also run lighthouse tests, these have come bac
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fshlackka.github.io%2Fguess-the-god%2F)
 - __CSS__
     - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshlackka.github.io%2Fguess-the-god%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
--__JavaScript__
+- __JavaScript__
     - No errors were returned when passing through **[JSHint](https://jshint.com/)** as shown in the images below.
 
     ![script.js Testing](assets/images/readme/script-testing.png)
