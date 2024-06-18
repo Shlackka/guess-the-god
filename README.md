@@ -2,7 +2,7 @@
 
 A link to the website is **[here](https://shlackka.github.io/guess-the-god/)**.
 
-Guess the God is an engaging and educational quiz where players are presented with images of gods from various mythologies. The objective is to correctly identify which pantheon each god belongs to—Greek, Norse, Egyptian, or Aztec. This fun and interactive game helps players familiarize themselves with the distinctive visual characteristics and attributes of deities from different cultures. Perfect for mythology enthusiasts and curious learners alike, this quiz offers a visual and entertaining way to deepen your knowledge of ancient pantheons.
+Guess the God is an engaging and educational quiz where players are presented with images of gods from various mythologies. The objective is to correctly identify which pantheon each god belongs to Greek, Norse, Egyptian, or Aztec. This fun and interactive game helps players familiarize themselves with the distinctive visual characteristics and attributes of deities from different cultures. Perfect for mythology enthusiasts and curious learners alike, this quiz offers a visual and entertaining way to deepen your knowledge of ancient pantheons.
 
 ![Responsive Mockup](assets/images/readme/gladiatour-mockup.png)
 
@@ -10,10 +10,12 @@ Guess the God is an engaging and educational quiz where players are presented wi
 
 - [Title](#guess-the-god)
 - [User Experience](#user-experience-ux)
-  - [Design](#design)
-    - [Colour Scheme](#colour-scheme)
-    - [Typography](#typography)
-    - [Imagery](#imagery)
+  - [Expectation](#expectation)
+  - [User Journey](#user-journey)
+- [Design](#design)
+  - [Colour Scheme](#colour-scheme)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Languages Used](#languages-used)
@@ -27,8 +29,18 @@ Guess the God is an engaging and educational quiz where players are presented wi
   - [Content](#content)
   - [Media](#media)
 
-
 ## User Experience (UX)
+
+  - ### Expectation
+    - **Clear Instructions**: Users look for clear and concise instructions on how to play the game.
+
+    - **Simple Navigation**: Navigation of the game is simple and intuitive.
+
+    - **Feedback**: Users expect and receive immediate feedback from each and every action performed whilst playing the game.
+
+    - **Educational**: Users receive new and interesting pieces of information upon playing the game.
+
+    - **Responsive Design**: Whether playing on mobile or desktop the game works well and as expected on both.
 
   - ### User Journey
     - **Landing Page**: Users are welcomed with a nicely styled door which upon clicking the button in the centre of the screen will open to the main menu.  
@@ -45,35 +57,26 @@ Guess the God is an engaging and educational quiz where players are presented wi
     - **Completion**: At the end of the quiz, users are offered an encouraging message on their performance  
     and offered a choice to play again or to end the game and be returned to the main menu/closed door depending on platform.
 
-- ### Design
-  - #### Colour Scheme
-    - The color scheme uses a light background (Papayawhip) for a warm, inviting feel. 
-        <div style="display: flex; align-items: center;">
-        <div style="width: 50px; height: 50px; background-color: papayawhip; margin-right: 10px;"></div> Papayawhip (#ffefd5)
-        </div>
-    - Dark red (#8b0000) is used for headings, buttons and the alert box to provide strong visual contrast.
-        <div style="display: flex; align-items: center;">
-        <div style="width: 50px; height: 50px; background-color: #8b0000; margin-right: 10px;"></div> Dark Red (#8b0000)
-        </div>
-    - White (#ffffff) is used for text and backgrounds of key elements to ensure readability and focus. 
-        <div style="display: flex; align-items: center;">
-        <div style="width: 50px; height: 50px; background-color: #ffffff; margin-right: 10px;"></div> White (#ffffff)
-        </div>
-    - Accents include various shades of black for shadows, adding depth and highlighting elements.
-        <div style="display: flex; align-items: center;">
-        <div style="width: 50px; height: 50px; background-color: #000000; margin-right: 10px;"></div> Black (#000000)
-        </div>
-  - #### Typography
+## Design
+
+  - ### Colour Scheme
+    - I chose these colours to create a visually striking and immersive experience that reflects the grandeur and mystique of mythology, with the dark red conveying a sense of ancient power, while the black and white provide clear, readable text and elements that stand out against the light, neutral background.
+
+    - The colour palette below was created using **[Contrast Grid](https://contrast-grid.eightshapes.com)**
+
+      ![Colour Palette](assets/images/readme/colour-palette.png)
+
+  - ### Typography
     - The primary font is 'Lato', sans-serif for general text, providing a clean and modern look. 
     - 'Vollkorn', serif is used for headings to add a touch of elegance and distinction.
     - All fonts were acquired through **[Google Fonts](https://fonts.google.com/)**.
 
-  - #### Imagery
+  - ### Imagery
     - High-quality images of gods from different mythologies are used to create a visually engaging and educational experience.  
     The images are central to the quiz, helping users associate visual characteristics with each god.
     - All god images were created with the help of **[ChatGPT](https://chatgpt.com/?oai-dm=1)**.
 
-- ### Wireframes
+  - ### Wireframes
 
 Please see below the original mockups of the site made using Balsamiq Wireframes.
 
