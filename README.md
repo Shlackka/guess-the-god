@@ -76,6 +76,13 @@ Guess the God is an engaging and educational quiz where players are presented wi
     The images are central to the quiz, helping users associate visual characteristics with each god.
     - All god images were created with the help of **[ChatGPT](https://chatgpt.com/?oai-dm=1)**.
 
+  - ### Languages Used
+    - **HTML5**: Used for structuring the content of the web pages. HTML5 provides the semantic elements and structure necessary for a well-organized and accessible web application.
+    - **CSS3**: Used for styling the web pages. CSS3 ensures that the application has a visually appealing and consistent design. It includes the use of Flexbox and Grid for layout, and media queries for responsiveness.
+    - **JavaScript**: Used for adding interactivity to the web application. JavaScript powers the game's logic, user interactions, dynamic content updates, and animations.  
+    Aswell as the use of modules to improve readability and scalability in the future.
+    - **Markdown**: Used to write the README.
+
   - ### Wireframes
 
 Please see below the original mockups of the site made using Balsamiq Wireframes.
@@ -104,16 +111,15 @@ Please see below the original mockups of the site made using Balsamiq Wireframes
 
 ## Features
 
-Below I will go into a brief explanation of the features I have encorporated into the site.
-
-- ### Languages Used
+Below I will go into a brief explanation of the features I have encorporated into the game.
 
 - ### Existing Features
 
-- __Navigation Bar__
+- __Landing Page (Desktop)__
 
-    - Shown at the top of all pages within the site, the navigation or 'nav' bar will make traversing the site as easy as it can be without having to resort to using any of the browsers navigation options.
-    - The nav bar is also fully responsive meaning even when viewing on a mobile or tablet it should be just as easy without sacraficing the quality of the experience.
+    - Shown upon loading the site on desktop, an attractive image used to introduce the site with minimal wording. 
+    - A central button offering an intriguing message of "Enter the Pantheon" inviting users to click and continue onto the main title screen.
+    - The sliding effect of the main image on the desktop landing page offers a feeling of grandeur as the main title page is unveiled.
 
 ![Navigation Bar](assets/images/readme/navigation-bar.png)
 
@@ -121,48 +127,56 @@ Below I will go into a brief explanation of the features I have encorporated int
 
 ![Navigation Bar Mobile(open)](assets/images/readme/navigation-bar-mobile-open.png)
 
-- __Landing Page__
+- __Landing Page/Title Page (Mobile)__
 
-    - The landing page has been designed in a way that really captures the grandeur of ancient rome with vibrant colours which compliment eachother whislt also staying loyal to the source content.
-    - Below the main heading of the landing page is a brief introduction to the website aswell as giving an ideal starting point through the site in the way of a button to the information page.
+    - The mobile landing page, although missing the sliding feature image of the desktop version still offers the same asthetic with a identical title page.
+    - A simple to use title page main menu offering the options of "Start Game" and "How to Play" with an attractive hero image to give a distinct feel to the game.
 
 ![Main Heading](assets/images/readme/main-heading.png)
 
 ![Main Page Introduction](assets/images/readme/main-page-introduction.png)
 
-- __Gladiators Page__
+- __Instructions__
 
-    - The Gladiators page is designed to flow easily from the landing page so as to keep the same feeling throughout the whole site.
-    - All images within this page have been styled the same in order to keep the page uniform and maintain quality.
-    - Below each image an audio control can be found which plays an audio clip of the pronunciation of the names in a phonetic style.
+    - When the "How to Play" button is clicked a message window will open to give all the relevant instrutions the player will need.
+    - The instructions window includes it's own "Start Game" button to avoid needing to return to the main menu.
 
 ![Gladiator Information](assets/images/readme/gladiator-information.png)
 
-- __Sign Up Page__
+- __Game Zone__
 
-    - The sign up page was designed to be as simple as possible whilst still keeping the overall feel of the site. 
-    - Minimal usage of elements was chosen to make best use of the background image to encourage a feeling of positivity and victory.
+    - A stylised image of a god will appear central to the player.
+    - A question will display below the god image "To which mythology does this god/goddess belong?".
+    - The answer buttons are displayed clearly below the question each in the same style as the main site.
+    - A hint button is displayed below the answer buttons clearly stating the repercussion for using a hint.
 
 ![Signup Form](assets/images/readme/signup-page.png)
 
-- __Thank You Page__
+- __Score__
 
-    - A thank you page has been implemented to show once a user has successfully signed up to enforce a positive response from the user.
-    - The custom message thanks the user for signing up whilst also giving them a button to return the main page.
+    - A score keeping area is displayed below the buttons.
+
+![Signup Form](assets/images/readme/signup-page.png)
+
+- __Alert Box (Answer)__
+
+    - For each action the player performs a message box will appear central to the screen.
+    - Uses an "x" in the top right corner as a close button.
+    - Will give the player feedback on their chosen answer whether it was right or wrong.
 
 ![Thank You Page](assets/images/readme/thank-you-page.png)
 
-- __The Footer__
+- __Alert Box (Hint)__
 
-    - The footer has been designed to keep in line with the navbar of a minimal look using the exact same colours and styles.
-    - Icons have been used rather than words as the pages they link to have become second nature to most users.
+    - Will give the player a hint dependant on the current god/goddess displayed.
+    - The hint can be displayed as many times as the player would like for each god/goddess.
 
 ![Footer](assets/images/readme/footer.png)
 
-- __404 Error Page__
+- __Alert Box (End Game)__
 
-    - The 404 error page has been designed to be simple but stay within the design of the rest of the site.
-    - A button directing back to the main page has been implemented and has the same styling as all other primary buttons.
+    - The message box will contain 2 buttons upon reaching an end game state "End Game" and "Play Again".
+    - The "x" in the top right will not appear for this message so as not to present an unwanted loop in game.
 
 ![404 Error Page](assets/images/readme/error-page.png)
 
