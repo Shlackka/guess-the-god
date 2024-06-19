@@ -68,46 +68,42 @@ Guess the God is an engaging and educational quiz where players are presented wi
 
   - ### Typography
     - The primary font is 'Lato', sans-serif for general text, providing a clean and modern look. 
+    
     - 'Vollkorn', serif is used for headings to add a touch of elegance and distinction.
+    
     - All fonts were acquired through **[Google Fonts](https://fonts.google.com/)**.
 
   - ### Imagery
     - High-quality images of gods from different mythologies are used to create a visually engaging and educational experience.  
     The images are central to the quiz, helping users associate visual characteristics with each god.
+    
     - All god images were created with the help of **[ChatGPT](https://chatgpt.com/?oai-dm=1)**.
 
   - ### Languages Used
     - **HTML5**: Used for structuring the content of the web pages. HTML5 provides the semantic elements and structure necessary for a well-organized and accessible web application.
+    
     - **CSS3**: Used for styling the web pages. CSS3 ensures that the application has a visually appealing and consistent design. It includes the use of Flexbox and Grid for layout, and media queries for responsiveness.
+    
     - **JavaScript**: Used for adding interactivity to the web application. JavaScript powers the game's logic, user interactions, dynamic content updates, and animations.  
     Aswell as the use of modules to improve readability and scalability in the future.
+    
     - **Markdown**: Used to write the README.
 
   - ### Wireframes
 
-Please see below the original mockups of the site made using Balsamiq Wireframes.
+Please see below the original wireframes of the site made using Balsamiq Wireframes.
 
-- Site Layout Draft
+- ### Main Menu (Desktop)
 
-![Site Layout Draft](assets/images/readme/layout-draft-gladiatour.png)
+![Main Menu Desktop Wireframe](assets/images/readme/main-menu-desktop-wireframe.png)
 
-- Main Page Mockup
+- ### Main Menu (Mobile)
 
-![Main Page Mockup](assets/images/readme/main-page-draft-gladiatour.png)
+![Main Menu Mobile Wireframe](assets/images/readme/main-menu-mobile-wireframe.png)
 
-- Information Page Mockup
+- ### Game Zone
 
-    - The design for the information page has changed from my initial designs due to user feedback about ease of use and readability.
-
-![Information Page Mockup](assets/images/readme/information-page-draft-gladiatour.png)
-
-- Signup Page Mockup
-
-![Signup Page Mockup](assets/images/readme/signup-page-draft-gladiatour.png)
-
-- Thank You Page Mockup
-
-![Thank You Page Mockup](assets/images/readme/form-submission-page-draft-gladiatour.png)
+![Game Zone Wireframe](assets/images/readme/game-zone-wireframe.png)
 
 ## Features
 
