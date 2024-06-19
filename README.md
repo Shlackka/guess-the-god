@@ -117,27 +117,28 @@ Below I will go into a brief explanation of the features I have encorporated int
     - A central button offering an intriguing message of "Enter the Pantheon" inviting users to click and continue onto the main title screen.
     - The sliding effect of the main image on the desktop landing page offers a feeling of grandeur as the main title page is unveiled.
 
-![Navigation Bar](assets/images/readme/navigation-bar.png)
+![Landing Page Desktop](assets/images/readme/landing-page-desktop.png)
 
-![Navigation Bar Mobile(closed)](assets/images/readme/navigation-bar-mobile.png)
+- __Main Menu (Desktop)__
 
-![Navigation Bar Mobile(open)](assets/images/readme/navigation-bar-mobile-open.png)
+    - An intuitive and simple to use main menu with 2 buttons, "Start Game" and "How to Play".
+    - Attractive imagery which supports getting the player into the right mindset for the game.
+
+![Main Menu Desktop](assets/images/readme/main-menu-desktop).png
 
 - __Landing Page/Title Page (Mobile)__
 
     - The mobile landing page, although missing the sliding feature image of the desktop version still offers the same asthetic with a identical title page.
     - A simple to use title page main menu offering the options of "Start Game" and "How to Play" with an attractive hero image to give a distinct feel to the game.
 
-![Main Heading](assets/images/readme/main-heading.png)
-
-![Main Page Introduction](assets/images/readme/main-page-introduction.png)
+![Landing Page/Title Page Mobile](assets/images/readme/landing-page-mobile.png)
 
 - __Instructions__
 
     - When the "How to Play" button is clicked a message window will open to give all the relevant instrutions the player will need.
     - The instructions window includes it's own "Start Game" button to avoid needing to return to the main menu.
 
-![Gladiator Information](assets/images/readme/gladiator-information.png)
+![Instructions](assets/images/readme/instructions.png)
 
 - __Game Zone__
 
@@ -146,13 +147,13 @@ Below I will go into a brief explanation of the features I have encorporated int
     - The answer buttons are displayed clearly below the question each in the same style as the main site.
     - A hint button is displayed below the answer buttons clearly stating the repercussion for using a hint.
 
-![Signup Form](assets/images/readme/signup-page.png)
+![Game Zone](assets/images/readme/game-zone.png)
 
 - __Score__
 
     - A score keeping area is displayed below the buttons.
 
-![Signup Form](assets/images/readme/signup-page.png)
+![Score](assets/images/readme/score.png)
 
 - __Alert Box (Answer)__
 
@@ -160,21 +161,21 @@ Below I will go into a brief explanation of the features I have encorporated int
     - Uses an "x" in the top right corner as a close button.
     - Will give the player feedback on their chosen answer whether it was right or wrong.
 
-![Thank You Page](assets/images/readme/thank-you-page.png)
+![Alert Box Answer](assets/images/readme/alert-box-answer.png)
 
 - __Alert Box (Hint)__
 
     - Will give the player a hint dependant on the current god/goddess displayed.
     - The hint can be displayed as many times as the player would like for each god/goddess.
 
-![Footer](assets/images/readme/footer.png)
+![Alert Box Hint](assets/images/readme/alert-box-hint.png)
 
 - __Alert Box (End Game)__
 
     - The message box will contain 2 buttons upon reaching an end game state "End Game" and "Play Again".
     - The "x" in the top right will not appear for this message so as not to present an unwanted loop in game.
 
-![404 Error Page](assets/images/readme/error-page.png)
+![Alert Box End Game](assets/images/readme/alert-box-end-game.png)
 
 ### Features Not Yet Implemented
 
@@ -185,34 +186,44 @@ Below I will go into a brief explanation of the features I have encorporated int
 
 ## Testing
 
-Each feature of the site has been tested upon integration and also tested again upon completion of development, these tests will be outlined below.
+Each feature of the game has been tested upon integration and also tested again upon completion of development, these tests will be outlined below.
 
-- The Nav bar was tested by confirming each link lead to the correct page which I can confirm is the case this was repeated for each page where the nav bar was present.
+- **Sliding Images**: The sliding images on the landing page were tested to ensure they animate correctly  
+and reveal the main menu upon clicking the "Enter The Pantheon" button. The transition and timing were checked for smoothness and alignment.
 
-- The footer, similarly to the nav bar was tested by confirming each link lead to the correct social media page, this was repeated for every page with the footer bar.
+- **Navigation Buttons**: All buttons present within the site have been tested to confirm they perform the correct actions:
+    - The "Start Game" button begins the game.
 
-- All buttons that are present within the site have been tested by confirming that once activated they perform the correct action, the button on the index leads to the information page and the buttons on the 404 and thank you pages leads back to the index page.
+    - The "How to Play" button displays the instructions.
 
-- The audio playback features on the information page have all been confirmed to play the correct audio clip for their relevant section. 
+    - The "Play Again" and "End Game" buttons appear at the end of the game, and they respectively restart the game or return the user to the main menu.
 
-- The sign up form has had all relevant inputs tested to confirm that they will request input when left empty with the email input specifically requesting for an email format with an @ symbol.
+- **Answer Buttons**:  Each answer button was tested to ensure it registers the correct mythology when clicked. The correct feedback message is displayed based on the user's choice.
+ 
+- **Hint Button**:  The hint button was tested to ensure it displays the correct hint and deducts points only the first time it is used for each god.  
+The score is adjusted accordingly, and hintsUsed array functions properly to prevent repeated point deduction for the same hint.
 
-- The submit button is confirmed to lead to the thank you page upon successful completion of all relevant inputs on the form.
+- **Score Calculation**:  The scoring system was tested to ensure points are correctly awarded for correct answers and deducted for hints.  
+The score resets properly when the game is restarted.
+
+- **Alert Box**:  The custom alert box was tested to ensure it displays the correct messages for user feedback, and the close button functions as expected.  
+Additionally, the answer buttons are temporarily disabled when the alert box is shown and re-enabled upon closing.
+
+- **Responsive Design**: The layout and functionality were tested across different screen sizes and devices to ensure the game maintains its structural integrity and usability.
+
+- **Accessibility**: All images were tested for appropriate alt text to ensure accessibility. Color contrast was checked to meet accessibility guidelines.
+
+### Lighthouse Testing
 
 Along with feature testing I have also run lighthouse tests, these have come back very positive as seen below with the screen captures.
 
-- Lighthouse report for main page
+- #### Lighthouse report for desktop
 
-![Lighthouse Report Index](assets/images/readme/lighthouse-report-index.png)
+![Lighthouse Report Desktop](assets/images/readme/lighthouse-report-desktop.png)
 
-- Lighthouse report for information page
+- #### Lighthouse report for mobile
 
-![Lighthouse Report Information](assets/images/readme/lighthouse-report-information.png)
-
-- Lighthouse report for signup form page
-
-![Lighthouse Report Signup Form](assets/images/readme/lighthouse-report-signup-form.png)
-
+![Lighthouse Report Mobile](assets/images/readme/lighthouse-report-mobile.png)
 
 ### Validator Testing
 
