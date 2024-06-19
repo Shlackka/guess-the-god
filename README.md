@@ -113,7 +113,7 @@ Please see below the original wireframes of the site made using Balsamiq Wirefra
 
 Below I will go into a brief explanation of the features I have encorporated into the game.
 
-- ### Existing Features
+### Existing Features
 
 - __Landing Page (Desktop)__
 
