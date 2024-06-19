@@ -97,15 +97,15 @@ Guess the God is an engaging and educational quiz where players are presented wi
 
 Please see below the original wireframes of the site made using Balsamiq Wireframes.
 
-- ### Main Menu (Desktop)
+- #### Main Menu (Desktop)
 
 ![Main Menu Desktop Wireframe](assets/images/readme/main-menu-desktop-wireframe.png)
 
-- ### Main Menu (Mobile)
+- #### Main Menu (Mobile)
 
 ![Main Menu Mobile Wireframe](assets/images/readme/main-menu-mobile-wireframe.png)
 
-- ### Game Zone
+- #### Game Zone
 
 ![Game Zone Wireframe](assets/images/readme/game-zone-wireframe.png)
 
