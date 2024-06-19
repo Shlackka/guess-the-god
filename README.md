@@ -4,6 +4,10 @@ A link to the website is **[here](https://shlackka.github.io/guess-the-god/)**.
 
 Guess the God is an engaging and educational quiz where players are presented with images of gods from various mythologies. The objective is to correctly identify which pantheon each god belongs to Greek, Norse, Egyptian, or Aztec. This fun and interactive game helps players familiarize themselves with the distinctive visual characteristics and attributes of deities from different cultures. Perfect for mythology enthusiasts and curious learners alike, this quiz offers a visual and entertaining way to deepen your knowledge of ancient pantheons.
 
+## Responsive Mockup
+
+  - This mockup image was made using **[Techsini Multi Device Mockup Generator](https://techsini.com/multi-mockup/)**
+
 ![Responsive Mockup](assets/images/readme/guess-the-god-mockup.png)
 
 **Table of contents:**
