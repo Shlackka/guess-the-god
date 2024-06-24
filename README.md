@@ -146,7 +146,7 @@ Below I will go into a brief explanation of the features I have encorporated int
 
 - __Game Zone__
 
-    - A stylised image of a god will appear central to the player.
+    - A stylised image of a god will appear central to the game zone.
     - A question will display below the god image "To which mythology does this god/goddess belong?".
     - The answer buttons are displayed clearly below the question each in the same style as the main site.
     - A hint button is displayed below the answer buttons clearly stating the repercussion for using a hint.
