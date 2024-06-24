@@ -128,7 +128,7 @@ Below I will go into a brief explanation of the features I have encorporated int
     - An intuitive and simple to use main menu with 2 buttons, "Start Game" and "How to Play".
     - Attractive imagery which supports getting the player into the right mindset for the game.
 
-![Main Menu Desktop](assets/images/readme/main-menu-desktop).png
+![Main Menu Desktop](assets/images/readme/main-menu-desktop.png)
 
 - __Landing Page/Title Page (Mobile)__
 
@@ -179,14 +179,18 @@ Below I will go into a brief explanation of the features I have encorporated int
     - The message box will contain 2 buttons upon reaching an end game state "End Game" and "Play Again".
     - The "x" in the top right will not appear for this message so as not to present an unwanted loop in game.
 
-![Alert Box End Game](assets/images/readme/alert-box-end-game.png)
+![Alert Box End Game](assets/images/readme/alert-box-end.png)
 
 ### Features Not Yet Implemented
 
-- __Gladiator Dropdown__
+- __Difficulty__
 
-    - I had planned to implement a dropdown on the gladiators information page to work on smaller screens much like the nav menu.
-    - This would have only shown the relevant information for the chosen gladiator rather than having the whole page as a long scrollable page.
+    - If I was to continue adding features at this stage then next would be a difficulty selector  
+    giving the player a limited amount of time or guesses to reach the required score to win.
+
+- __More Pantheons__
+
+    - Another feature I may implement is further Pantheons to guess from such as Roman or Hinduism.
 
 ## Testing
 
@@ -249,13 +253,13 @@ To the best of my knowledge after testing all aspects of the site I have been un
 
 The site has been deployed to GitHub pages, in order to do this the following steps were completed.
 
-- From within the Gladiatour repo I navigated to the settings tab
+- From within the guess-the-god repo I navigated to the settings tab
 
 - In settings navigate to the Pages section under "Code and automation"
 
 - Once in Pages, I chose to deploy from a branch as my source and then chose the Main branch before clicking save
 
-- The deployed site can be found at **https://shlackka.github.io/Gladiatour/index.html**
+- The deployed site can be found at **https://shlackka.github.io/guess-the-god/**
 
 If you wish to fork the repo this can be achieved by using the "Fork" button at the top of the repo.
 
@@ -263,7 +267,7 @@ If you wish to clone the repo this can be achieved by using the drop down on the
 
 ## Credits 
 
-In the below section I will go over all of the external sources where I either drew inspiration or used their tools to assist in the development of Gladiatour.
+In the below section I will go over all of the external sources where I either drew inspiration or used their tools to assist in the development of Guess the God.
 
 ### Content
 
