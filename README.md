@@ -32,6 +32,8 @@ Guess the God is an engaging and educational quiz where players are presented wi
 - [Credits](#credits)
   - [Content](#content)
   - [Media](#media)
+  - [Tools and Libraries](#tools-and-libraries)
+  - [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
 
@@ -66,7 +68,7 @@ Guess the God is an engaging and educational quiz where players are presented wi
   - ### Colour Scheme
     - I chose these colours to create a visually striking and immersive experience that reflects the grandeur and mystique of mythology, with the dark red conveying a sense of ancient power, while the black and white provide clear, readable text and elements that stand out against the light, neutral background.
 
-    - The colour palette below was created using **[Contrast Grid](https://contrast-grid.eightshapes.com)**
+    - The colour palette below was created using **[EightShapes Contrast Grid](https://contrast-grid.eightshapes.com)**
 
       ![Colour Palette](assets/images/readme/colour-palette.png)
 
@@ -261,7 +263,7 @@ The site has been deployed to GitHub pages, in order to do this the following st
 
 - The deployed site can be found at **https://shlackka.github.io/guess-the-god/**
 
-If you wish to fork the repo this can be achieved by using the "Fork" button at the top of the repo.
+If you wish to fork the repo this can be achieved by using the "Fork" button at the top of the repo and following the onscreen prompts to set up the forked repo as you wish.
 
 If you wish to clone the repo this can be achieved by using the drop down on the green "code" button and copying the URL into a workspace of your choosing such as **[Gitpod](https://www.gitpod.io/)** or **[CodeAnywhere](https://codeanywhere.com/)**.
 
@@ -271,20 +273,33 @@ In the below section I will go over all of the external sources where I either d
 
 ### Content
 
- - The text for the main index page and information page was taken from **[ChatGPT](https://chatgpt.com/?oai-dm=1)** with minor changes by myself. (All text within the README has been typed by myself).
+- All text included within Guess the God has been typed out by myself with hint and god facts first being found with the use of **[ChatGPT](https://chatgpt.com/?oai-dm=1)**  
+ before being reworded into the game.
 
- - **[ChatGPT](https://chatgpt.com/?oai-dm=1)** has been used to help explain any concepts I may have been struggling to understand, this was used more at the beginning of development with it tapering off as I became more confident.
+- **[ChatGPT](https://chatgpt.com/?oai-dm=1)** has been used to help explain certain JavaScript concepts I was struggling with, specifically when I changed the nested if statements into a switch case.
 
- - The icons for the footer and the arrow for the dropdown on mobile were taken from **[Font Awesome](https://fontawesome.com/)**.
+- All inspiration for this project was taken from my personal interest into ancient civilizations and their respective mythologies and religions.
 
- - For the initial development of this site I took inspiration from the practice project I completed prior, which can be found **[here](https://github.com/Shlackka/Love-Running)**.
-
- - Fonts for the site were found using **[Google Fonts](https://fonts.google.com/)**.
+- Fonts for the site were found using **[Google Fonts](https://fonts.google.com/)**.
 
 ### Media
-
-- The audio clips for the information page were created using **[Voice Generator](https://voicegenerator.io/)**.
 
 - All images including those used as backgrounds have been created using the DALL-E AI image creator through **[ChatGPT](https://chatgpt.com/?oai-dm=1)** by OpenAI.
 
 - Favicon was created using **[Red Ketchup](https://redketchup.io/favicon-generator)**.
+ 
+### Tools and Libraries
+
+- **[Gitpod](https://www.gitpod.io/)** was used as the development environment.
+
+- **[Visual Studio Code](https://code.visualstudio.com/)** was the code editor used for writing and editing the project's code within Gitpod.
+
+- **[GitHub](https://github.com/)** was used for version control and hosting the project repository.
+
+### Acknowledgements
+
+- I would like to thank my family, specifically my sister Robyn for helping to playtest Guess the God  
+and highlight any areas of gameplay I may have overlooked during development.
+
+- I would also like to thank my Mentor Harry Dhillon who has been an invaluable source of encouragement.  
+Always helping to guide me in the right direction during development.
