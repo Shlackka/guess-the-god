@@ -91,7 +91,7 @@ Guess the God is an engaging and educational quiz where players are presented wi
     - **CSS3**: Used for styling the web pages. CSS3 ensures that the application has a visually appealing and consistent design. It includes the use of Flexbox and Grid for layout, and media queries for responsiveness.
     
     - **JavaScript**: Used for adding interactivity to the web application. JavaScript powers the game's logic, user interactions, dynamic content updates, and animations.  
-    Aswell as the use of modules to improve readability and scalability in the future.
+    As well as the use of modules to improve readability and scalability in the future.
     
     - **Markdown**: Used to write the README.
 
@@ -128,7 +128,7 @@ Below I will go into a brief explanation of the features I have encorporated int
 - __Main Menu (Desktop)__
 
     - An intuitive and simple to use main menu with 2 buttons, "Start Game" and "How to Play".
-    - Attractive imagery which supports getting the player into the right mindset for the game.
+    - Attractive imagery that supports getting the player into the right mindset for the game.
 
 ![Main Menu Desktop](assets/images/readme/main-menu-desktop.png)
 
@@ -151,7 +151,7 @@ Below I will go into a brief explanation of the features I have encorporated int
     - A stylised image of a god will appear central to the game zone.
     - A question will display below the god image "To which mythology does this god/goddess belong?".
     - The answer buttons are displayed clearly below the question each in the same style as the main site.
-    - A hint button is displayed below the answer buttons clearly stating the repercussion for using a hint.
+    - A hint button is displayed below the answer buttons, clearly stating the repercussion for using a hint.
 
 ![Game Zone](assets/images/readme/game-zone.png)
 
@@ -214,14 +214,14 @@ and reveal the main menu upon clicking the "Enter The Pantheon" button. The tran
 The score is adjusted accordingly, and hintsUsed array functions properly to prevent repeated point deduction for the same hint.
 
 - **Score Calculation**:  The scoring system was tested to ensure points are correctly awarded for correct answers and deducted for hints.  
-The score resets properly when the game is restarted.
+The score properly resets when the game is restarted.
 
 - **Alert Box**:  The custom alert box was tested to ensure it displays the correct messages for user feedback, and the close button functions as expected.  
 Additionally, the answer buttons are temporarily disabled when the alert box is shown and re-enabled upon closing.
 
-- **Responsive Design**: The layout and functionality were tested across different screen sizes and devices to ensure the game maintains its structural integrity and usability.
+- **Responsive Design**: The layout and functionality was tested across different screen sizes and devices to ensure the game maintains its structural integrity and usability.
 
-- **Accessibility**: All images were tested for appropriate alt text to ensure accessibility. Color contrast was checked to meet accessibility guidelines.
+- **Accessibility**: All images were tested for appropriate alt text to ensure accessibility. Colour contrast was checked to meet accessibility guidelines.
 
 ### Lighthouse Testing
 
@@ -259,7 +259,7 @@ The site has been deployed to GitHub pages, in order to do this the following st
 
 - In settings navigate to the Pages section under "Code and automation"
 
-- Once in Pages, I chose to deploy from a branch as my source and then chose the Main branch before clicking save
+- Once in Pages, I chose to deploy from a branch as the source and then chose the Main branch before clicking save
 
 - The deployed site can be found at **https://shlackka.github.io/guess-the-god/**
 
